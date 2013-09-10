@@ -1,5 +1,5 @@
 
-/* First created by JCasGen Tue Sep 10 23:35:41 EDT 2013 */
+/* First created by JCasGen Tue Sep 10 01:53:30 EDT 2013 */
 package edu.cmu.lti.csd.types;
 
 import org.apache.uima.jcas.JCas;
@@ -14,7 +14,7 @@ import org.apache.uima.cas.Feature;
 import org.apache.uima.jcas.tcas.Annotation_Type;
 
 /** 
- * Updated by JCasGen Tue Sep 10 01:45:00 EDT 2013
+ * Updated by JCasGen Tue Sep 10 01:55:38 EDT 2013
  * @generated */
 public class TestElement_Type extends Annotation_Type {
   /** @generated */

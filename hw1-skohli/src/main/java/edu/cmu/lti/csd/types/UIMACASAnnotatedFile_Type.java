@@ -1,5 +1,5 @@
 
-/* First created by JCasGen Tue Sep 10 23:40:33 EDT 2013 */
+/* First created by JCasGen Tue Sep 10 01:53:30 EDT 2013 */
 package edu.cmu.lti.csd.types;
 
 import org.apache.uima.jcas.JCas;
@@ -14,7 +14,7 @@ import org.apache.uima.cas.Feature;
 import org.apache.uima.jcas.tcas.Annotation_Type;
 
 /** 
- * Updated by JCasGen Tue Sep 10 01:45:00 EDT 2013
+ * Updated by JCasGen Tue Sep 10 01:55:38 EDT 2013
  * @generated */
 public class UIMACASAnnotatedFile_Type extends Annotation_Type {
   /** @generated */
@@ -111,7 +111,7 @@ public class UIMACASAnnotatedFile_Type extends Annotation_Type {
     casFeatCode_questionSpan  = (null == casFeat_questionSpan) ? JCas.INVALID_FEATURE_CODE : ((FeatureImpl)casFeat_questionSpan).getCode();
 
  
-    casFeat_answerSpanList = jcas.getRequiredFeatureDE(casType, "answerSpanList", "com.cmu.lti.csd.types.AnswerSpanList", featOkTst);
+    casFeat_answerSpanList = jcas.getRequiredFeatureDE(casType, "answerSpanList", "edu.cmu.lti.csd.types.AnswerSpanList", featOkTst);
     casFeatCode_answerSpanList  = (null == casFeat_answerSpanList) ? JCas.INVALID_FEATURE_CODE : ((FeatureImpl)casFeat_answerSpanList).getCode();
 
  

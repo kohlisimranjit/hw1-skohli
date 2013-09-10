@@ -1,6 +1,6 @@
 
 
-/* First created by JCasGen Tue Sep 10 17:10:41 EDT 2013 */
+/* First created by JCasGen Tue Sep 10 01:54:42 EDT 2013 */
 package edu.cmu.lti.csd.types;
 
 import org.apache.uima.jcas.JCas; 
@@ -11,19 +11,16 @@ import org.apache.uima.jcas.cas.FSList;
 import org.apache.uima.jcas.tcas.Annotation;
 
 
-//import uima.cas.ListBase;
-
-
 /** 
- * Updated by JCasGen Tue Sep 10 22:24:31 EDT 2013
+ * Updated by JCasGen Tue Sep 10 01:55:38 EDT 2013
  * XML source: /home/richie/git/hw1-skohli/hw1-skohli/src/main/resources/typeSystemDescriptor.xml
  * @generated */
-public class TokenList extends Annotation {
+public class AnswerSpanList extends Annotation {
   /** @generated
    * @ordered 
    */
   @SuppressWarnings ("hiding")
-  public final static int typeIndexID = JCasRegistry.register(TokenList.class);
+  public final static int typeIndexID = JCasRegistry.register(AnswerSpanList.class);
   /** @generated
    * @ordered 
    */
@@ -35,23 +32,23 @@ public class TokenList extends Annotation {
  
   /** Never called.  Disable default constructor
    * @generated */
-  protected TokenList() {/* intentionally empty block */}
+  protected AnswerSpanList() {/* intentionally empty block */}
     
   /** Internal - constructor used by generator 
    * @generated */
-  public TokenList(int addr, TOP_Type type) {
+  public AnswerSpanList(int addr, TOP_Type type) {
     super(addr, type);
     readObject();
   }
   
   /** @generated */
-  public TokenList(JCas jcas) {
+  public AnswerSpanList(JCas jcas) {
     super(jcas);
     readObject();   
   } 
 
   /** @generated */  
-  public TokenList(JCas jcas, int begin, int end) {
+  public AnswerSpanList(JCas jcas, int begin, int end) {
     super(jcas);
     setBegin(begin);
     setEnd(end);
@@ -64,22 +61,24 @@ public class TokenList extends Annotation {
   @generated modifiable */
   private void readObject() {/*default - does nothing empty block */}
      
-  //*--------------*
-  //* Feature: tokens
-
-  /** getter for tokens - gets 
-   * @generated */
-  public FSList getTokens() {
-    if (TokenList_Type.featOkTst && ((TokenList_Type)jcasType).casFeat_tokens == null)
-      jcasType.jcas.throwFeatMissing("tokens", "edu.cmu.lti.csd.types.TokenList");
-    return (FSList)(jcasType.ll_cas.ll_getFSForRef(jcasType.ll_cas.ll_getRefValue(addr, ((TokenList_Type)jcasType).casFeatCode_tokens)));}
+ 
     
-  /** setter for tokens - sets  
+  //*--------------*
+  //* Feature: answers
+
+  /** getter for answers - gets 
    * @generated */
-  public void setTokens(FSList v) {
-    if (TokenList_Type.featOkTst && ((TokenList_Type)jcasType).casFeat_tokens == null)
-      jcasType.jcas.throwFeatMissing("tokens", "edu.cmu.lti.csd.types.TokenList");
-    jcasType.ll_cas.ll_setRefValue(addr, ((TokenList_Type)jcasType).casFeatCode_tokens, jcasType.ll_cas.ll_getFSRef(v));}    
+  public FSList getAnswers() {
+    if (AnswerSpanList_Type.featOkTst && ((AnswerSpanList_Type)jcasType).casFeat_answers == null)
+      jcasType.jcas.throwFeatMissing("answers", "edu.cmu.lti.csd.types.AnswerSpanList");
+    return (FSList)(jcasType.ll_cas.ll_getFSForRef(jcasType.ll_cas.ll_getRefValue(addr, ((AnswerSpanList_Type)jcasType).casFeatCode_answers)));}
+    
+  /** setter for answers - sets  
+   * @generated */
+  public void setAnswers(FSList v) {
+    if (AnswerSpanList_Type.featOkTst && ((AnswerSpanList_Type)jcasType).casFeat_answers == null)
+      jcasType.jcas.throwFeatMissing("answers", "edu.cmu.lti.csd.types.AnswerSpanList");
+    jcasType.ll_cas.ll_setRefValue(addr, ((AnswerSpanList_Type)jcasType).casFeatCode_answers, jcasType.ll_cas.ll_getFSRef(v));}    
   }
 
     

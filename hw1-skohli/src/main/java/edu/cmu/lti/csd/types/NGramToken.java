@@ -1,20 +1,17 @@
 
 
-/* First created by JCasGen Tue Sep 10 17:52:38 EDT 2013 */
+/* First created by JCasGen Tue Sep 10 01:53:30 EDT 2013 */
 package edu.cmu.lti.csd.types;
 
 import org.apache.uima.jcas.JCas; 
 import org.apache.uima.jcas.JCasRegistry;
 import org.apache.uima.jcas.cas.TOP_Type;
 
-import com.cmu.lti.csd.types.GenericToken;
-
-
-import org.apache.uima.jcas.tcas.Annotation;
+import edu.cmu.lti.csd.types.GenericToken;
 
 
 /** 
- * Updated by JCasGen Tue Sep 10 01:45:00 EDT 2013
+ * Updated by JCasGen Tue Sep 10 01:55:38 EDT 2013
  * XML source: /home/richie/git/hw1-skohli/hw1-skohli/src/main/resources/typeSystemDescriptor.xml
  * @generated */
 public class NGramToken extends GenericToken {

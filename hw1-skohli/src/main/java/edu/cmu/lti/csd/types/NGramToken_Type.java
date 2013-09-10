@@ -1,5 +1,5 @@
 
-/* First created by JCasGen Tue Sep 10 17:52:38 EDT 2013 */
+/* First created by JCasGen Tue Sep 10 01:53:30 EDT 2013 */
 package edu.cmu.lti.csd.types;
 
 import org.apache.uima.jcas.JCas;
@@ -11,12 +11,10 @@ import org.apache.uima.cas.impl.TypeImpl;
 import org.apache.uima.cas.Type;
 import org.apache.uima.cas.impl.FeatureImpl;
 import org.apache.uima.cas.Feature;
-import com.cmu.lti.csd.types.GenericToken_Type;
-
-import org.apache.uima.jcas.tcas.Annotation_Type;
+import edu.cmu.lti.csd.types.GenericToken_Type;
 
 /** 
- * Updated by JCasGen Tue Sep 10 01:45:00 EDT 2013
+ * Updated by JCasGen Tue Sep 10 01:55:38 EDT 2013
  * @generated */
 public class NGramToken_Type extends GenericToken_Type {
   /** @generated */

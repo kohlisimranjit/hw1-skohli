@@ -8,7 +8,7 @@
     <typeDescription>
       <name>edu.cmu.lti.csd.types.NGramToken</name>
       <description/>
-      <supertypeName>com.cmu.lti.csd.types.GenericToken</supertypeName>
+      <supertypeName>edu.cmu.lti.csd.types.GenericToken</supertypeName>
       <features>
         <featureDescription>
           <name>partOfSpeech</name>
@@ -69,7 +69,7 @@
         <featureDescription>
           <name>answerSpanList</name>
           <description/>
-          <rangeTypeName>com.cmu.lti.csd.types.AnswerSpanList</rangeTypeName>
+          <rangeTypeName>edu.cmu.lti.csd.types.AnswerSpanList</rangeTypeName>
         </featureDescription>
       <featureDescription>
           <name>producer</name>
@@ -79,14 +79,14 @@
       </features>
     </typeDescription>
   <typeDescription>
-      <name>com.cmu.lti.csd.types.TokenSpan</name>
+      <name>edu.cmu.lti.csd.types.TokenSpan</name>
       <description/>
-      <supertypeName>com.cmu.lti.csd.types.GenericToken</supertypeName>
+      <supertypeName>edu.cmu.lti.csd.types.GenericToken</supertypeName>
     </typeDescription>
     <typeDescription>
-      <name>com.cmu.lti.csd.types.Answer</name>
+      <name>edu.cmu.lti.csd.types.Answer</name>
       <description/>
-      <supertypeName>com.cmu.lti.csd.types.TokenSpan</supertypeName>
+      <supertypeName>edu.cmu.lti.csd.types.TokenSpan</supertypeName>
       <features>
         <featureDescription>
           <name>score</name>
@@ -96,24 +96,24 @@
       </features>
     </typeDescription>
     <typeDescription>
-      <name>com.cmu.lti.csd.types.Question</name>
+      <name>edu.cmu.lti.csd.types.Question</name>
       <description/>
-      <supertypeName>com.cmu.lti.csd.types.TokenSpan</supertypeName>
+      <supertypeName>edu.cmu.lti.csd.types.TokenSpan</supertypeName>
     </typeDescription>
     <typeDescription>
-      <name>com.cmu.lti.csd.types.EvaluationReport</name>
+      <name>edu.cmu.lti.csd.types.EvaluationReport</name>
       <description/>
       <supertypeName>uima.tcas.Annotation</supertypeName>
       <features>
         <featureDescription>
           <name>sortedAnswerSpans</name>
           <description/>
-          <rangeTypeName>com.cmu.lti.csd.types.AnswerSpanList</rangeTypeName>
+          <rangeTypeName>edu.cmu.lti.csd.types.AnswerSpanList</rangeTypeName>
         </featureDescription>
       </features>
     </typeDescription>
     <typeDescription>
-      <name>com.cmu.lti.csd.types.AnswerSpanList</name>
+      <name>edu.cmu.lti.csd.types.AnswerSpanList</name>
       <description/>
       <supertypeName>uima.tcas.Annotation</supertypeName>
       <features>
@@ -126,7 +126,7 @@
       </features>
     </typeDescription>
     <typeDescription>
-      <name>com.cmu.lti.csd.types.GenericToken</name>
+      <name>edu.cmu.lti.csd.types.GenericToken</name>
       <description/>
       <supertypeName>uima.tcas.Annotation</supertypeName>
       <features>
@@ -143,7 +143,7 @@
       </features>
     </typeDescription>
   <typeDescription>
-      <name>GenericTokenList</name>
+      <name>edu.cmu.lti.csd.types.GenericTokenList</name>
       <description/>
       <supertypeName>uima.tcas.Annotation</supertypeName>
       <features>

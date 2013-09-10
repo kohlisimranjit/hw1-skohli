@@ -1,5 +1,5 @@
 
-/* First created by JCasGen Tue Sep 10 17:41:32 EDT 2013 */
+/* First created by JCasGen Tue Sep 10 01:54:42 EDT 2013 */
 package edu.cmu.lti.csd.types;
 
 import org.apache.uima.jcas.JCas;
@@ -11,9 +11,9 @@ import org.apache.uima.cas.impl.TypeImpl;
 import org.apache.uima.cas.Type;
 
 /** 
- * Updated by JCasGen Wed Sep 11 01:21:59 EDT 2013
+ * Updated by JCasGen Tue Sep 10 01:55:38 EDT 2013
  * @generated */
-public class Question_Type extends Sentence_Type {
+public class Question_Type extends TokenSpan_Type {
   /** @generated */
   @Override
   protected FSGenerator getFSGenerator() {return fsGenerator;}

@@ -1,25 +1,24 @@
 
 
-/* First created by JCasGen Tue Sep 10 17:10:41 EDT 2013 */
+/* First created by JCasGen Tue Sep 10 01:54:42 EDT 2013 */
 package edu.cmu.lti.csd.types;
 
 import org.apache.uima.jcas.JCas; 
 import org.apache.uima.jcas.JCasRegistry;
 import org.apache.uima.jcas.cas.TOP_Type;
 
-import org.apache.uima.jcas.tcas.Annotation;
 
 
 /** 
- * Updated by JCasGen Wed Sep 11 01:21:59 EDT 2013
+ * Updated by JCasGen Tue Sep 10 01:55:38 EDT 2013
  * XML source: /home/richie/git/hw1-skohli/hw1-skohli/src/main/resources/typeSystemDescriptor.xml
  * @generated */
-public class Sentence extends Annotation {
+public class Answer extends TokenSpan {
   /** @generated
    * @ordered 
    */
   @SuppressWarnings ("hiding")
-  public final static int typeIndexID = JCasRegistry.register(Sentence.class);
+  public final static int typeIndexID = JCasRegistry.register(Answer.class);
   /** @generated
    * @ordered 
    */
@@ -31,23 +30,23 @@ public class Sentence extends Annotation {
  
   /** Never called.  Disable default constructor
    * @generated */
-  protected Sentence() {/* intentionally empty block */}
+  protected Answer() {/* intentionally empty block */}
     
   /** Internal - constructor used by generator 
    * @generated */
-  public Sentence(int addr, TOP_Type type) {
+  public Answer(int addr, TOP_Type type) {
     super(addr, type);
     readObject();
   }
   
   /** @generated */
-  public Sentence(JCas jcas) {
+  public Answer(JCas jcas) {
     super(jcas);
     readObject();   
   } 
 
   /** @generated */  
-  public Sentence(JCas jcas, int begin, int end) {
+  public Answer(JCas jcas, int begin, int end) {
     super(jcas);
     setBegin(begin);
     setEnd(end);
@@ -63,21 +62,21 @@ public class Sentence extends Annotation {
  
     
   //*--------------*
-  //* Feature: range
+  //* Feature: score
 
-  /** getter for range - gets 
+  /** getter for score - gets 
    * @generated */
-  public Range getRange() {
-    if (Sentence_Type.featOkTst && ((Sentence_Type)jcasType).casFeat_range == null)
-      jcasType.jcas.throwFeatMissing("range", "edu.cmu.lti.csd.types.Sentence");
-    return (Range)(jcasType.ll_cas.ll_getFSForRef(jcasType.ll_cas.ll_getRefValue(addr, ((Sentence_Type)jcasType).casFeatCode_range)));}
+  public int getScore() {
+    if (Answer_Type.featOkTst && ((Answer_Type)jcasType).casFeat_score == null)
+      jcasType.jcas.throwFeatMissing("score", "edu.cmu.lti.csd.types.Answer");
+    return jcasType.ll_cas.ll_getIntValue(addr, ((Answer_Type)jcasType).casFeatCode_score);}
     
-  /** setter for range - sets  
+  /** setter for score - sets  
    * @generated */
-  public void setRange(Range v) {
-    if (Sentence_Type.featOkTst && ((Sentence_Type)jcasType).casFeat_range == null)
-      jcasType.jcas.throwFeatMissing("range", "edu.cmu.lti.csd.types.Sentence");
-    jcasType.ll_cas.ll_setRefValue(addr, ((Sentence_Type)jcasType).casFeatCode_range, jcasType.ll_cas.ll_getFSRef(v));}    
+  public void setScore(int v) {
+    if (Answer_Type.featOkTst && ((Answer_Type)jcasType).casFeat_score == null)
+      jcasType.jcas.throwFeatMissing("score", "edu.cmu.lti.csd.types.Answer");
+    jcasType.ll_cas.ll_setIntValue(addr, ((Answer_Type)jcasType).casFeatCode_score, v);}    
   }
 
     

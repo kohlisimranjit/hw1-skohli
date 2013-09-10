@@ -1,5 +1,5 @@
 
-/* First created by JCasGen Tue Sep 10 17:10:41 EDT 2013 */
+/* First created by JCasGen Tue Sep 10 01:54:42 EDT 2013 */
 package edu.cmu.lti.csd.types;
 
 import org.apache.uima.jcas.JCas;
@@ -14,9 +14,9 @@ import org.apache.uima.cas.Feature;
 import org.apache.uima.jcas.tcas.Annotation_Type;
 
 /** 
- * Updated by JCasGen Wed Sep 11 01:21:59 EDT 2013
+ * Updated by JCasGen Tue Sep 10 01:55:38 EDT 2013
  * @generated */
-public class Sentence_Type extends Annotation_Type {
+public class GenericToken_Type extends Annotation_Type {
   /** @generated */
   @Override
   protected FSGenerator getFSGenerator() {return fsGenerator;}
@@ -24,25 +24,25 @@ public class Sentence_Type extends Annotation_Type {
   private final FSGenerator fsGenerator = 
     new FSGenerator() {
       public FeatureStructure createFS(int addr, CASImpl cas) {
-  			 if (Sentence_Type.this.useExistingInstance) {
+  			 if (GenericToken_Type.this.useExistingInstance) {
   			   // Return eq fs instance if already created
-  		     FeatureStructure fs = Sentence_Type.this.jcas.getJfsFromCaddr(addr);
+  		     FeatureStructure fs = GenericToken_Type.this.jcas.getJfsFromCaddr(addr);
   		     if (null == fs) {
-  		       fs = new Sentence(addr, Sentence_Type.this);
-  			   Sentence_Type.this.jcas.putJfsFromCaddr(addr, fs);
+  		       fs = new GenericToken(addr, GenericToken_Type.this);
+  			   GenericToken_Type.this.jcas.putJfsFromCaddr(addr, fs);
   			   return fs;
   		     }
   		     return fs;
-        } else return new Sentence(addr, Sentence_Type.this);
+        } else return new GenericToken(addr, GenericToken_Type.this);
   	  }
     };
   /** @generated */
   @SuppressWarnings ("hiding")
-  public final static int typeIndexID = Sentence.typeIndexID;
+  public final static int typeIndexID = GenericToken.typeIndexID;
   /** @generated 
      @modifiable */
   @SuppressWarnings ("hiding")
-  public final static boolean featOkTst = JCasRegistry.getFeatOkTst("edu.cmu.lti.csd.types.Sentence");
+  public final static boolean featOkTst = JCasRegistry.getFeatOkTst("edu.cmu.lti.csd.types.GenericToken");
  
   /** @generated */
   final Feature casFeat_range;
@@ -51,14 +51,32 @@ public class Sentence_Type extends Annotation_Type {
   /** @generated */ 
   public int getRange(int addr) {
         if (featOkTst && casFeat_range == null)
-      jcas.throwFeatMissing("range", "edu.cmu.lti.csd.types.Sentence");
+      jcas.throwFeatMissing("range", "edu.cmu.lti.csd.types.GenericToken");
     return ll_cas.ll_getRefValue(addr, casFeatCode_range);
   }
   /** @generated */    
   public void setRange(int addr, int v) {
         if (featOkTst && casFeat_range == null)
-      jcas.throwFeatMissing("range", "edu.cmu.lti.csd.types.Sentence");
+      jcas.throwFeatMissing("range", "edu.cmu.lti.csd.types.GenericToken");
     ll_cas.ll_setRefValue(addr, casFeatCode_range, v);}
+    
+  
+ 
+  /** @generated */
+  final Feature casFeat_stringSet;
+  /** @generated */
+  final int     casFeatCode_stringSet;
+  /** @generated */ 
+  public String getStringSet(int addr) {
+        if (featOkTst && casFeat_stringSet == null)
+      jcas.throwFeatMissing("stringSet", "edu.cmu.lti.csd.types.GenericToken");
+    return ll_cas.ll_getStringValue(addr, casFeatCode_stringSet);
+  }
+  /** @generated */    
+  public void setStringSet(int addr, String v) {
+        if (featOkTst && casFeat_stringSet == null)
+      jcas.throwFeatMissing("stringSet", "edu.cmu.lti.csd.types.GenericToken");
+    ll_cas.ll_setStringValue(addr, casFeatCode_stringSet, v);}
     
   
 
@@ -66,13 +84,17 @@ public class Sentence_Type extends Annotation_Type {
 
   /** initialize variables to correspond with Cas Type and Features
 	* @generated */
-  public Sentence_Type(JCas jcas, Type casType) {
+  public GenericToken_Type(JCas jcas, Type casType) {
     super(jcas, casType);
     casImpl.getFSClassRegistry().addGeneratorForType((TypeImpl)this.casType, getFSGenerator());
 
  
     casFeat_range = jcas.getRequiredFeatureDE(casType, "range", "edu.cmu.lti.csd.types.Range", featOkTst);
     casFeatCode_range  = (null == casFeat_range) ? JCas.INVALID_FEATURE_CODE : ((FeatureImpl)casFeat_range).getCode();
+
+ 
+    casFeat_stringSet = jcas.getRequiredFeatureDE(casType, "stringSet", "uima.cas.String", featOkTst);
+    casFeatCode_stringSet  = (null == casFeat_stringSet) ? JCas.INVALID_FEATURE_CODE : ((FeatureImpl)casFeat_stringSet).getCode();
 
   }
 }
