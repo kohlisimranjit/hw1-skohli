@@ -11,7 +11,7 @@ import org.apache.uima.jcas.tcas.Annotation;
 
 
 /** 
- * Updated by JCasGen Tue Sep 10 17:14:28 EDT 2013
+ * Updated by JCasGen Tue Sep 10 17:48:33 EDT 2013
  * XML source: /home/richie/git/hw1-skohli/hw1-skohli/src/main/resources/typeSystemDescriptor.xml
  * @generated */
 public class Token extends Annotation {
@@ -63,42 +63,6 @@ public class Token extends Annotation {
  
     
   //*--------------*
-  //* Feature: start
-
-  /** getter for start - gets 
-   * @generated */
-  public int getStart() {
-    if (Token_Type.featOkTst && ((Token_Type)jcasType).casFeat_start == null)
-      jcasType.jcas.throwFeatMissing("start", "edu.cmu.lti.csd.types.Token");
-    return jcasType.ll_cas.ll_getIntValue(addr, ((Token_Type)jcasType).casFeatCode_start);}
-    
-  /** setter for start - sets  
-   * @generated */
-  public void setStart(int v) {
-    if (Token_Type.featOkTst && ((Token_Type)jcasType).casFeat_start == null)
-      jcasType.jcas.throwFeatMissing("start", "edu.cmu.lti.csd.types.Token");
-    jcasType.ll_cas.ll_setIntValue(addr, ((Token_Type)jcasType).casFeatCode_start, v);}    
-   
-    
-  //*--------------*
-  //* Feature: end
-
-  /** getter for end - gets 
-   * @generated */
-  public int getEnd() {
-    if (Token_Type.featOkTst && ((Token_Type)jcasType).casFeat_end == null)
-      jcasType.jcas.throwFeatMissing("end", "edu.cmu.lti.csd.types.Token");
-    return jcasType.ll_cas.ll_getIntValue(addr, ((Token_Type)jcasType).casFeatCode_end);}
-    
-  /** setter for end - sets  
-   * @generated */
-  public void setEnd(int v) {
-    if (Token_Type.featOkTst && ((Token_Type)jcasType).casFeat_end == null)
-      jcasType.jcas.throwFeatMissing("end", "edu.cmu.lti.csd.types.Token");
-    jcasType.ll_cas.ll_setIntValue(addr, ((Token_Type)jcasType).casFeatCode_end, v);}    
-   
-    
-  //*--------------*
   //* Feature: word
 
   /** getter for word - gets 
@@ -132,6 +96,60 @@ public class Token extends Annotation {
     if (Token_Type.featOkTst && ((Token_Type)jcasType).casFeat_partOfSpeech == null)
       jcasType.jcas.throwFeatMissing("partOfSpeech", "edu.cmu.lti.csd.types.Token");
     jcasType.ll_cas.ll_setStringValue(addr, ((Token_Type)jcasType).casFeatCode_partOfSpeech, v);}    
+   
+    
+  //*--------------*
+  //* Feature: confidenceScore
+
+  /** getter for confidenceScore - gets 
+   * @generated */
+  public int getConfidenceScore() {
+    if (Token_Type.featOkTst && ((Token_Type)jcasType).casFeat_confidenceScore == null)
+      jcasType.jcas.throwFeatMissing("confidenceScore", "edu.cmu.lti.csd.types.Token");
+    return jcasType.ll_cas.ll_getIntValue(addr, ((Token_Type)jcasType).casFeatCode_confidenceScore);}
+    
+  /** setter for confidenceScore - sets  
+   * @generated */
+  public void setConfidenceScore(int v) {
+    if (Token_Type.featOkTst && ((Token_Type)jcasType).casFeat_confidenceScore == null)
+      jcasType.jcas.throwFeatMissing("confidenceScore", "edu.cmu.lti.csd.types.Token");
+    jcasType.ll_cas.ll_setIntValue(addr, ((Token_Type)jcasType).casFeatCode_confidenceScore, v);}    
+   
+    
+  //*--------------*
+  //* Feature: producer
+
+  /** getter for producer - gets 
+   * @generated */
+  public String getProducer() {
+    if (Token_Type.featOkTst && ((Token_Type)jcasType).casFeat_producer == null)
+      jcasType.jcas.throwFeatMissing("producer", "edu.cmu.lti.csd.types.Token");
+    return jcasType.ll_cas.ll_getStringValue(addr, ((Token_Type)jcasType).casFeatCode_producer);}
+    
+  /** setter for producer - sets  
+   * @generated */
+  public void setProducer(String v) {
+    if (Token_Type.featOkTst && ((Token_Type)jcasType).casFeat_producer == null)
+      jcasType.jcas.throwFeatMissing("producer", "edu.cmu.lti.csd.types.Token");
+    jcasType.ll_cas.ll_setStringValue(addr, ((Token_Type)jcasType).casFeatCode_producer, v);}    
+   
+    
+  //*--------------*
+  //* Feature: range
+
+  /** getter for range - gets 
+   * @generated */
+  public Range getRange() {
+    if (Token_Type.featOkTst && ((Token_Type)jcasType).casFeat_range == null)
+      jcasType.jcas.throwFeatMissing("range", "edu.cmu.lti.csd.types.Token");
+    return (Range)(jcasType.ll_cas.ll_getFSForRef(jcasType.ll_cas.ll_getRefValue(addr, ((Token_Type)jcasType).casFeatCode_range)));}
+    
+  /** setter for range - sets  
+   * @generated */
+  public void setRange(Range v) {
+    if (Token_Type.featOkTst && ((Token_Type)jcasType).casFeat_range == null)
+      jcasType.jcas.throwFeatMissing("range", "edu.cmu.lti.csd.types.Token");
+    jcasType.ll_cas.ll_setRefValue(addr, ((Token_Type)jcasType).casFeatCode_range, jcasType.ll_cas.ll_getFSRef(v));}    
   }
 
     

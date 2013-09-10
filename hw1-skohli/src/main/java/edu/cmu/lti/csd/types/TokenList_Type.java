@@ -9,12 +9,16 @@ import org.apache.uima.cas.impl.FSGenerator;
 import org.apache.uima.cas.FeatureStructure;
 import org.apache.uima.cas.impl.TypeImpl;
 import org.apache.uima.cas.Type;
-import uima.cas.ListBase_Type;
+import org.apache.uima.cas.impl.FeatureImpl;
+import org.apache.uima.cas.Feature;
+import org.apache.uima.jcas.tcas.Annotation_Type;
+
+//import uima.cas.ListBase_Type;
 
 /** 
- * Updated by JCasGen Tue Sep 10 17:14:28 EDT 2013
+ * Updated by JCasGen Tue Sep 10 22:24:31 EDT 2013
  * @generated */
-public class TokenList_Type extends ListBase_Type {
+public class TokenList_Type extends Annotation_Type {
   /** @generated */
   @Override
   protected FSGenerator getFSGenerator() {return fsGenerator;}
@@ -44,11 +48,35 @@ public class TokenList_Type extends ListBase_Type {
 
 
 
+  /** @generated */
+  final Feature casFeat_tokens;
+  /** @generated */
+  final int     casFeatCode_tokens;
+  /** @generated */ 
+  public int getTokens(int addr) {
+        if (featOkTst && casFeat_tokens == null)
+      jcas.throwFeatMissing("tokens", "edu.cmu.lti.csd.types.TokenList");
+    return ll_cas.ll_getRefValue(addr, casFeatCode_tokens);
+  }
+  /** @generated */    
+  public void setTokens(int addr, int v) {
+        if (featOkTst && casFeat_tokens == null)
+      jcas.throwFeatMissing("tokens", "edu.cmu.lti.csd.types.TokenList");
+    ll_cas.ll_setRefValue(addr, casFeatCode_tokens, v);}
+    
+  
+
+
+
   /** initialize variables to correspond with Cas Type and Features
 	* @generated */
   public TokenList_Type(JCas jcas, Type casType) {
     super(jcas, casType);
     casImpl.getFSClassRegistry().addGeneratorForType((TypeImpl)this.casType, getFSGenerator());
+
+ 
+    casFeat_tokens = jcas.getRequiredFeatureDE(casType, "tokens", "uima.cas.FSList", featOkTst);
+    casFeatCode_tokens  = (null == casFeat_tokens) ? JCas.INVALID_FEATURE_CODE : ((FeatureImpl)casFeat_tokens).getCode();
 
   }
 }

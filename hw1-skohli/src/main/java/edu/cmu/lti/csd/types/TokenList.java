@@ -7,14 +7,18 @@ import org.apache.uima.jcas.JCas;
 import org.apache.uima.jcas.JCasRegistry;
 import org.apache.uima.jcas.cas.TOP_Type;
 
-import uima.cas.ListBase;
+import org.apache.uima.jcas.cas.FSList;
+import org.apache.uima.jcas.tcas.Annotation;
+
+
+//import uima.cas.ListBase;
 
 
 /** 
- * Updated by JCasGen Tue Sep 10 17:14:28 EDT 2013
+ * Updated by JCasGen Tue Sep 10 22:24:31 EDT 2013
  * XML source: /home/richie/git/hw1-skohli/hw1-skohli/src/main/resources/typeSystemDescriptor.xml
  * @generated */
-public class TokenList extends ListBase {
+public class TokenList extends Annotation {
   /** @generated
    * @ordered 
    */
@@ -46,12 +50,36 @@ public class TokenList extends ListBase {
     readObject();   
   } 
 
+  /** @generated */  
+  public TokenList(JCas jcas, int begin, int end) {
+    super(jcas);
+    setBegin(begin);
+    setEnd(end);
+    readObject();
+  }   
+
   /** <!-- begin-user-doc -->
     * Write your own initialization here
     * <!-- end-user-doc -->
   @generated modifiable */
   private void readObject() {/*default - does nothing empty block */}
      
-}
+  //*--------------*
+  //* Feature: tokens
+
+  /** getter for tokens - gets 
+   * @generated */
+  public FSList getTokens() {
+    if (TokenList_Type.featOkTst && ((TokenList_Type)jcasType).casFeat_tokens == null)
+      jcasType.jcas.throwFeatMissing("tokens", "edu.cmu.lti.csd.types.TokenList");
+    return (FSList)(jcasType.ll_cas.ll_getFSForRef(jcasType.ll_cas.ll_getRefValue(addr, ((TokenList_Type)jcasType).casFeatCode_tokens)));}
+    
+  /** setter for tokens - sets  
+   * @generated */
+  public void setTokens(FSList v) {
+    if (TokenList_Type.featOkTst && ((TokenList_Type)jcasType).casFeat_tokens == null)
+      jcasType.jcas.throwFeatMissing("tokens", "edu.cmu.lti.csd.types.TokenList");
+    jcasType.ll_cas.ll_setRefValue(addr, ((TokenList_Type)jcasType).casFeatCode_tokens, jcasType.ll_cas.ll_getFSRef(v));}    
+  }
 
     

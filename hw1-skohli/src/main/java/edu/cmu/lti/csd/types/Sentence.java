@@ -11,7 +11,7 @@ import org.apache.uima.jcas.tcas.Annotation;
 
 
 /** 
- * Updated by JCasGen Tue Sep 10 17:14:28 EDT 2013
+ * Updated by JCasGen Wed Sep 11 01:21:59 EDT 2013
  * XML source: /home/richie/git/hw1-skohli/hw1-skohli/src/main/resources/typeSystemDescriptor.xml
  * @generated */
 public class Sentence extends Annotation {
@@ -63,57 +63,21 @@ public class Sentence extends Annotation {
  
     
   //*--------------*
-  //* Feature: start
+  //* Feature: range
 
-  /** getter for start - gets 
+  /** getter for range - gets 
    * @generated */
-  public int getStart() {
-    if (Sentence_Type.featOkTst && ((Sentence_Type)jcasType).casFeat_start == null)
-      jcasType.jcas.throwFeatMissing("start", "edu.cmu.lti.csd.types.Sentence");
-    return jcasType.ll_cas.ll_getIntValue(addr, ((Sentence_Type)jcasType).casFeatCode_start);}
+  public Range getRange() {
+    if (Sentence_Type.featOkTst && ((Sentence_Type)jcasType).casFeat_range == null)
+      jcasType.jcas.throwFeatMissing("range", "edu.cmu.lti.csd.types.Sentence");
+    return (Range)(jcasType.ll_cas.ll_getFSForRef(jcasType.ll_cas.ll_getRefValue(addr, ((Sentence_Type)jcasType).casFeatCode_range)));}
     
-  /** setter for start - sets  
+  /** setter for range - sets  
    * @generated */
-  public void setStart(int v) {
-    if (Sentence_Type.featOkTst && ((Sentence_Type)jcasType).casFeat_start == null)
-      jcasType.jcas.throwFeatMissing("start", "edu.cmu.lti.csd.types.Sentence");
-    jcasType.ll_cas.ll_setIntValue(addr, ((Sentence_Type)jcasType).casFeatCode_start, v);}    
-   
-    
-  //*--------------*
-  //* Feature: end
-
-  /** getter for end - gets 
-   * @generated */
-  public int getEnd() {
-    if (Sentence_Type.featOkTst && ((Sentence_Type)jcasType).casFeat_end == null)
-      jcasType.jcas.throwFeatMissing("end", "edu.cmu.lti.csd.types.Sentence");
-    return jcasType.ll_cas.ll_getIntValue(addr, ((Sentence_Type)jcasType).casFeatCode_end);}
-    
-  /** setter for end - sets  
-   * @generated */
-  public void setEnd(int v) {
-    if (Sentence_Type.featOkTst && ((Sentence_Type)jcasType).casFeat_end == null)
-      jcasType.jcas.throwFeatMissing("end", "edu.cmu.lti.csd.types.Sentence");
-    jcasType.ll_cas.ll_setIntValue(addr, ((Sentence_Type)jcasType).casFeatCode_end, v);}    
-   
-    
-  //*--------------*
-  //* Feature: tokens
-
-  /** getter for tokens - gets 
-   * @generated */
-  public TokenList getTokens() {
-    if (Sentence_Type.featOkTst && ((Sentence_Type)jcasType).casFeat_tokens == null)
-      jcasType.jcas.throwFeatMissing("tokens", "edu.cmu.lti.csd.types.Sentence");
-    return (TokenList)(jcasType.ll_cas.ll_getFSForRef(jcasType.ll_cas.ll_getRefValue(addr, ((Sentence_Type)jcasType).casFeatCode_tokens)));}
-    
-  /** setter for tokens - sets  
-   * @generated */
-  public void setTokens(TokenList v) {
-    if (Sentence_Type.featOkTst && ((Sentence_Type)jcasType).casFeat_tokens == null)
-      jcasType.jcas.throwFeatMissing("tokens", "edu.cmu.lti.csd.types.Sentence");
-    jcasType.ll_cas.ll_setRefValue(addr, ((Sentence_Type)jcasType).casFeatCode_tokens, jcasType.ll_cas.ll_getFSRef(v));}    
+  public void setRange(Range v) {
+    if (Sentence_Type.featOkTst && ((Sentence_Type)jcasType).casFeat_range == null)
+      jcasType.jcas.throwFeatMissing("range", "edu.cmu.lti.csd.types.Sentence");
+    jcasType.ll_cas.ll_setRefValue(addr, ((Sentence_Type)jcasType).casFeatCode_range, jcasType.ll_cas.ll_getFSRef(v));}    
   }
 
     
