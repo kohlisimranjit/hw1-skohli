@@ -1,5 +1,5 @@
 
-/* First created by JCasGen Tue Sep 10 01:54:42 EDT 2013 */
+/* First created by JCasGen Tue Sep 10 02:07:48 EDT 2013 */
 package edu.cmu.lti.csd.types;
 
 import org.apache.uima.jcas.JCas;
@@ -14,9 +14,9 @@ import org.apache.uima.cas.Feature;
 import org.apache.uima.jcas.tcas.Annotation_Type;
 
 /** 
- * Updated by JCasGen Tue Sep 10 01:55:38 EDT 2013
+ * Updated by JCasGen Tue Sep 10 02:07:48 EDT 2013
  * @generated */
-public class AnswerSpanList_Type extends Annotation_Type {
+public class AnswerList_Type extends Annotation_Type {
   /** @generated */
   @Override
   protected FSGenerator getFSGenerator() {return fsGenerator;}
@@ -24,25 +24,25 @@ public class AnswerSpanList_Type extends Annotation_Type {
   private final FSGenerator fsGenerator = 
     new FSGenerator() {
       public FeatureStructure createFS(int addr, CASImpl cas) {
-  			 if (AnswerSpanList_Type.this.useExistingInstance) {
+  			 if (AnswerList_Type.this.useExistingInstance) {
   			   // Return eq fs instance if already created
-  		     FeatureStructure fs = AnswerSpanList_Type.this.jcas.getJfsFromCaddr(addr);
+  		     FeatureStructure fs = AnswerList_Type.this.jcas.getJfsFromCaddr(addr);
   		     if (null == fs) {
-  		       fs = new AnswerSpanList(addr, AnswerSpanList_Type.this);
-  			   AnswerSpanList_Type.this.jcas.putJfsFromCaddr(addr, fs);
+  		       fs = new AnswerList(addr, AnswerList_Type.this);
+  			   AnswerList_Type.this.jcas.putJfsFromCaddr(addr, fs);
   			   return fs;
   		     }
   		     return fs;
-        } else return new AnswerSpanList(addr, AnswerSpanList_Type.this);
+        } else return new AnswerList(addr, AnswerList_Type.this);
   	  }
     };
   /** @generated */
   @SuppressWarnings ("hiding")
-  public final static int typeIndexID = AnswerSpanList.typeIndexID;
+  public final static int typeIndexID = AnswerList.typeIndexID;
   /** @generated 
      @modifiable */
   @SuppressWarnings ("hiding")
-  public final static boolean featOkTst = JCasRegistry.getFeatOkTst("edu.cmu.lti.csd.types.AnswerSpanList");
+  public final static boolean featOkTst = JCasRegistry.getFeatOkTst("edu.cmu.lti.csd.types.AnswerList");
  
   /** @generated */
   final Feature casFeat_answers;
@@ -51,13 +51,13 @@ public class AnswerSpanList_Type extends Annotation_Type {
   /** @generated */ 
   public int getAnswers(int addr) {
         if (featOkTst && casFeat_answers == null)
-      jcas.throwFeatMissing("answers", "edu.cmu.lti.csd.types.AnswerSpanList");
+      jcas.throwFeatMissing("answers", "edu.cmu.lti.csd.types.AnswerList");
     return ll_cas.ll_getRefValue(addr, casFeatCode_answers);
   }
   /** @generated */    
   public void setAnswers(int addr, int v) {
         if (featOkTst && casFeat_answers == null)
-      jcas.throwFeatMissing("answers", "edu.cmu.lti.csd.types.AnswerSpanList");
+      jcas.throwFeatMissing("answers", "edu.cmu.lti.csd.types.AnswerList");
     ll_cas.ll_setRefValue(addr, casFeatCode_answers, v);}
     
   
@@ -66,7 +66,7 @@ public class AnswerSpanList_Type extends Annotation_Type {
 
   /** initialize variables to correspond with Cas Type and Features
 	* @generated */
-  public AnswerSpanList_Type(JCas jcas, Type casType) {
+  public AnswerList_Type(JCas jcas, Type casType) {
     super(jcas, casType);
     casImpl.getFSClassRegistry().addGeneratorForType((TypeImpl)this.casType, getFSGenerator());
 

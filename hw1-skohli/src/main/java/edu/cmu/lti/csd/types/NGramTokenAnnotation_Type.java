@@ -1,5 +1,5 @@
 
-/* First created by JCasGen Tue Sep 10 01:53:30 EDT 2013 */
+/* First created by JCasGen Tue Sep 10 02:07:48 EDT 2013 */
 package edu.cmu.lti.csd.types;
 
 import org.apache.uima.jcas.JCas;
@@ -11,12 +11,11 @@ import org.apache.uima.cas.impl.TypeImpl;
 import org.apache.uima.cas.Type;
 import org.apache.uima.cas.impl.FeatureImpl;
 import org.apache.uima.cas.Feature;
-import edu.cmu.lti.csd.types.GenericToken_Type;
 
 /** 
- * Updated by JCasGen Tue Sep 10 01:55:38 EDT 2013
+ * Updated by JCasGen Tue Sep 10 02:07:48 EDT 2013
  * @generated */
-public class NGramToken_Type extends GenericToken_Type {
+public class NGramTokenAnnotation_Type extends GenericTokenAnnotation_Type {
   /** @generated */
   @Override
   protected FSGenerator getFSGenerator() {return fsGenerator;}
@@ -24,25 +23,25 @@ public class NGramToken_Type extends GenericToken_Type {
   private final FSGenerator fsGenerator = 
     new FSGenerator() {
       public FeatureStructure createFS(int addr, CASImpl cas) {
-  			 if (NGramToken_Type.this.useExistingInstance) {
+  			 if (NGramTokenAnnotation_Type.this.useExistingInstance) {
   			   // Return eq fs instance if already created
-  		     FeatureStructure fs = NGramToken_Type.this.jcas.getJfsFromCaddr(addr);
+  		     FeatureStructure fs = NGramTokenAnnotation_Type.this.jcas.getJfsFromCaddr(addr);
   		     if (null == fs) {
-  		       fs = new NGramToken(addr, NGramToken_Type.this);
-  			   NGramToken_Type.this.jcas.putJfsFromCaddr(addr, fs);
+  		       fs = new NGramTokenAnnotation(addr, NGramTokenAnnotation_Type.this);
+  			   NGramTokenAnnotation_Type.this.jcas.putJfsFromCaddr(addr, fs);
   			   return fs;
   		     }
   		     return fs;
-        } else return new NGramToken(addr, NGramToken_Type.this);
+        } else return new NGramTokenAnnotation(addr, NGramTokenAnnotation_Type.this);
   	  }
     };
   /** @generated */
   @SuppressWarnings ("hiding")
-  public final static int typeIndexID = NGramToken.typeIndexID;
+  public final static int typeIndexID = NGramTokenAnnotation.typeIndexID;
   /** @generated 
      @modifiable */
   @SuppressWarnings ("hiding")
-  public final static boolean featOkTst = JCasRegistry.getFeatOkTst("edu.cmu.lti.csd.types.NGramToken");
+  public final static boolean featOkTst = JCasRegistry.getFeatOkTst("edu.cmu.lti.csd.types.NGramTokenAnnotation");
  
   /** @generated */
   final Feature casFeat_partOfSpeech;
@@ -51,13 +50,13 @@ public class NGramToken_Type extends GenericToken_Type {
   /** @generated */ 
   public String getPartOfSpeech(int addr) {
         if (featOkTst && casFeat_partOfSpeech == null)
-      jcas.throwFeatMissing("partOfSpeech", "edu.cmu.lti.csd.types.NGramToken");
+      jcas.throwFeatMissing("partOfSpeech", "edu.cmu.lti.csd.types.NGramTokenAnnotation");
     return ll_cas.ll_getStringValue(addr, casFeatCode_partOfSpeech);
   }
   /** @generated */    
   public void setPartOfSpeech(int addr, String v) {
         if (featOkTst && casFeat_partOfSpeech == null)
-      jcas.throwFeatMissing("partOfSpeech", "edu.cmu.lti.csd.types.NGramToken");
+      jcas.throwFeatMissing("partOfSpeech", "edu.cmu.lti.csd.types.NGramTokenAnnotation");
     ll_cas.ll_setStringValue(addr, casFeatCode_partOfSpeech, v);}
     
   
@@ -69,13 +68,13 @@ public class NGramToken_Type extends GenericToken_Type {
   /** @generated */ 
   public int getConfidenceScore(int addr) {
         if (featOkTst && casFeat_confidenceScore == null)
-      jcas.throwFeatMissing("confidenceScore", "edu.cmu.lti.csd.types.NGramToken");
+      jcas.throwFeatMissing("confidenceScore", "edu.cmu.lti.csd.types.NGramTokenAnnotation");
     return ll_cas.ll_getIntValue(addr, casFeatCode_confidenceScore);
   }
   /** @generated */    
   public void setConfidenceScore(int addr, int v) {
         if (featOkTst && casFeat_confidenceScore == null)
-      jcas.throwFeatMissing("confidenceScore", "edu.cmu.lti.csd.types.NGramToken");
+      jcas.throwFeatMissing("confidenceScore", "edu.cmu.lti.csd.types.NGramTokenAnnotation");
     ll_cas.ll_setIntValue(addr, casFeatCode_confidenceScore, v);}
     
   
@@ -87,13 +86,13 @@ public class NGramToken_Type extends GenericToken_Type {
   /** @generated */ 
   public String getProducer(int addr) {
         if (featOkTst && casFeat_producer == null)
-      jcas.throwFeatMissing("producer", "edu.cmu.lti.csd.types.NGramToken");
+      jcas.throwFeatMissing("producer", "edu.cmu.lti.csd.types.NGramTokenAnnotation");
     return ll_cas.ll_getStringValue(addr, casFeatCode_producer);
   }
   /** @generated */    
   public void setProducer(int addr, String v) {
         if (featOkTst && casFeat_producer == null)
-      jcas.throwFeatMissing("producer", "edu.cmu.lti.csd.types.NGramToken");
+      jcas.throwFeatMissing("producer", "edu.cmu.lti.csd.types.NGramTokenAnnotation");
     ll_cas.ll_setStringValue(addr, casFeatCode_producer, v);}
     
   
@@ -102,7 +101,7 @@ public class NGramToken_Type extends GenericToken_Type {
 
   /** initialize variables to correspond with Cas Type and Features
 	* @generated */
-  public NGramToken_Type(JCas jcas, Type casType) {
+  public NGramTokenAnnotation_Type(JCas jcas, Type casType) {
     super(jcas, casType);
     casImpl.getFSClassRegistry().addGeneratorForType((TypeImpl)this.casType, getFSGenerator());
 

@@ -7,6 +7,7 @@ import org.apache.uima.jcas.JCas;
 import org.apache.uima.jcas.JCasRegistry;
 import org.apache.uima.jcas.cas.TOP_Type;
 
+import org.apache.uima.jcas.cas.FSList;
 import org.apache.uima.jcas.tcas.Annotation;
 
 
@@ -14,12 +15,12 @@ import org.apache.uima.jcas.tcas.Annotation;
  * Updated by JCasGen Tue Sep 10 02:07:48 EDT 2013
  * XML source: /home/richie/git/hw1-skohli/hw1-skohli/src/main/resources/typeSystemDescriptor.xml
  * @generated */
-public class EvaluationReport extends Annotation {
+public class GenericTokenList extends Annotation {
   /** @generated
    * @ordered 
    */
   @SuppressWarnings ("hiding")
-  public final static int typeIndexID = JCasRegistry.register(EvaluationReport.class);
+  public final static int typeIndexID = JCasRegistry.register(GenericTokenList.class);
   /** @generated
    * @ordered 
    */
@@ -31,23 +32,23 @@ public class EvaluationReport extends Annotation {
  
   /** Never called.  Disable default constructor
    * @generated */
-  protected EvaluationReport() {/* intentionally empty block */}
+  protected GenericTokenList() {/* intentionally empty block */}
     
   /** Internal - constructor used by generator 
    * @generated */
-  public EvaluationReport(int addr, TOP_Type type) {
+  public GenericTokenList(int addr, TOP_Type type) {
     super(addr, type);
     readObject();
   }
   
   /** @generated */
-  public EvaluationReport(JCas jcas) {
+  public GenericTokenList(JCas jcas) {
     super(jcas);
     readObject();   
   } 
 
   /** @generated */  
-  public EvaluationReport(JCas jcas, int begin, int end) {
+  public GenericTokenList(JCas jcas, int begin, int end) {
     super(jcas);
     setBegin(begin);
     setEnd(end);
@@ -63,21 +64,21 @@ public class EvaluationReport extends Annotation {
  
     
   //*--------------*
-  //* Feature: sortedAnswerSpans
+  //* Feature: genericTokens
 
-  /** getter for sortedAnswerSpans - gets 
+  /** getter for genericTokens - gets 
    * @generated */
-  public AnswerList getSortedAnswerSpans() {
-    if (EvaluationReport_Type.featOkTst && ((EvaluationReport_Type)jcasType).casFeat_sortedAnswerSpans == null)
-      jcasType.jcas.throwFeatMissing("sortedAnswerSpans", "edu.cmu.lti.csd.types.EvaluationReport");
-    return (AnswerList)(jcasType.ll_cas.ll_getFSForRef(jcasType.ll_cas.ll_getRefValue(addr, ((EvaluationReport_Type)jcasType).casFeatCode_sortedAnswerSpans)));}
+  public FSList getGenericTokens() {
+    if (GenericTokenList_Type.featOkTst && ((GenericTokenList_Type)jcasType).casFeat_genericTokens == null)
+      jcasType.jcas.throwFeatMissing("genericTokens", "edu.cmu.lti.csd.types.GenericTokenList");
+    return (FSList)(jcasType.ll_cas.ll_getFSForRef(jcasType.ll_cas.ll_getRefValue(addr, ((GenericTokenList_Type)jcasType).casFeatCode_genericTokens)));}
     
-  /** setter for sortedAnswerSpans - sets  
+  /** setter for genericTokens - sets  
    * @generated */
-  public void setSortedAnswerSpans(AnswerList v) {
-    if (EvaluationReport_Type.featOkTst && ((EvaluationReport_Type)jcasType).casFeat_sortedAnswerSpans == null)
-      jcasType.jcas.throwFeatMissing("sortedAnswerSpans", "edu.cmu.lti.csd.types.EvaluationReport");
-    jcasType.ll_cas.ll_setRefValue(addr, ((EvaluationReport_Type)jcasType).casFeatCode_sortedAnswerSpans, jcasType.ll_cas.ll_getFSRef(v));}    
+  public void setGenericTokens(FSList v) {
+    if (GenericTokenList_Type.featOkTst && ((GenericTokenList_Type)jcasType).casFeat_genericTokens == null)
+      jcasType.jcas.throwFeatMissing("genericTokens", "edu.cmu.lti.csd.types.GenericTokenList");
+    jcasType.ll_cas.ll_setRefValue(addr, ((GenericTokenList_Type)jcasType).casFeatCode_genericTokens, jcasType.ll_cas.ll_getFSRef(v));}    
   }
 
     

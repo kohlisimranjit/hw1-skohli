@@ -1,5 +1,5 @@
 
-/* First created by JCasGen Tue Sep 10 01:54:42 EDT 2013 */
+/* First created by JCasGen Tue Sep 10 02:07:48 EDT 2013 */
 package edu.cmu.lti.csd.types;
 
 import org.apache.uima.jcas.JCas;
@@ -14,9 +14,9 @@ import org.apache.uima.cas.Feature;
 import org.apache.uima.jcas.tcas.Annotation_Type;
 
 /** 
- * Updated by JCasGen Tue Sep 10 01:55:38 EDT 2013
+ * Updated by JCasGen Tue Sep 10 02:07:48 EDT 2013
  * @generated */
-public class GenericToken_Type extends Annotation_Type {
+public class GenericTokenAnnotation_Type extends Annotation_Type {
   /** @generated */
   @Override
   protected FSGenerator getFSGenerator() {return fsGenerator;}
@@ -24,25 +24,25 @@ public class GenericToken_Type extends Annotation_Type {
   private final FSGenerator fsGenerator = 
     new FSGenerator() {
       public FeatureStructure createFS(int addr, CASImpl cas) {
-  			 if (GenericToken_Type.this.useExistingInstance) {
+  			 if (GenericTokenAnnotation_Type.this.useExistingInstance) {
   			   // Return eq fs instance if already created
-  		     FeatureStructure fs = GenericToken_Type.this.jcas.getJfsFromCaddr(addr);
+  		     FeatureStructure fs = GenericTokenAnnotation_Type.this.jcas.getJfsFromCaddr(addr);
   		     if (null == fs) {
-  		       fs = new GenericToken(addr, GenericToken_Type.this);
-  			   GenericToken_Type.this.jcas.putJfsFromCaddr(addr, fs);
+  		       fs = new GenericTokenAnnotation(addr, GenericTokenAnnotation_Type.this);
+  			   GenericTokenAnnotation_Type.this.jcas.putJfsFromCaddr(addr, fs);
   			   return fs;
   		     }
   		     return fs;
-        } else return new GenericToken(addr, GenericToken_Type.this);
+        } else return new GenericTokenAnnotation(addr, GenericTokenAnnotation_Type.this);
   	  }
     };
   /** @generated */
   @SuppressWarnings ("hiding")
-  public final static int typeIndexID = GenericToken.typeIndexID;
+  public final static int typeIndexID = GenericTokenAnnotation.typeIndexID;
   /** @generated 
      @modifiable */
   @SuppressWarnings ("hiding")
-  public final static boolean featOkTst = JCasRegistry.getFeatOkTst("edu.cmu.lti.csd.types.GenericToken");
+  public final static boolean featOkTst = JCasRegistry.getFeatOkTst("edu.cmu.lti.csd.types.GenericTokenAnnotation");
  
   /** @generated */
   final Feature casFeat_range;
@@ -51,13 +51,13 @@ public class GenericToken_Type extends Annotation_Type {
   /** @generated */ 
   public int getRange(int addr) {
         if (featOkTst && casFeat_range == null)
-      jcas.throwFeatMissing("range", "edu.cmu.lti.csd.types.GenericToken");
+      jcas.throwFeatMissing("range", "edu.cmu.lti.csd.types.GenericTokenAnnotation");
     return ll_cas.ll_getRefValue(addr, casFeatCode_range);
   }
   /** @generated */    
   public void setRange(int addr, int v) {
         if (featOkTst && casFeat_range == null)
-      jcas.throwFeatMissing("range", "edu.cmu.lti.csd.types.GenericToken");
+      jcas.throwFeatMissing("range", "edu.cmu.lti.csd.types.GenericTokenAnnotation");
     ll_cas.ll_setRefValue(addr, casFeatCode_range, v);}
     
   
@@ -69,13 +69,13 @@ public class GenericToken_Type extends Annotation_Type {
   /** @generated */ 
   public String getStringSet(int addr) {
         if (featOkTst && casFeat_stringSet == null)
-      jcas.throwFeatMissing("stringSet", "edu.cmu.lti.csd.types.GenericToken");
+      jcas.throwFeatMissing("stringSet", "edu.cmu.lti.csd.types.GenericTokenAnnotation");
     return ll_cas.ll_getStringValue(addr, casFeatCode_stringSet);
   }
   /** @generated */    
   public void setStringSet(int addr, String v) {
         if (featOkTst && casFeat_stringSet == null)
-      jcas.throwFeatMissing("stringSet", "edu.cmu.lti.csd.types.GenericToken");
+      jcas.throwFeatMissing("stringSet", "edu.cmu.lti.csd.types.GenericTokenAnnotation");
     ll_cas.ll_setStringValue(addr, casFeatCode_stringSet, v);}
     
   
@@ -84,7 +84,7 @@ public class GenericToken_Type extends Annotation_Type {
 
   /** initialize variables to correspond with Cas Type and Features
 	* @generated */
-  public GenericToken_Type(JCas jcas, Type casType) {
+  public GenericTokenAnnotation_Type(JCas jcas, Type casType) {
     super(jcas, casType);
     casImpl.getFSClassRegistry().addGeneratorForType((TypeImpl)this.casType, getFSGenerator());
 

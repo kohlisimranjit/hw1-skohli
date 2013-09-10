@@ -1,18 +1,17 @@
 
 
-/* First created by JCasGen Tue Sep 10 01:53:30 EDT 2013 */
+/* First created by JCasGen Tue Sep 10 02:07:48 EDT 2013 */
 package edu.cmu.lti.csd.types;
 
 import org.apache.uima.jcas.JCas; 
 import org.apache.uima.jcas.JCasRegistry;
 import org.apache.uima.jcas.cas.TOP_Type;
 
-import edu.cmu.lti.csd.types.AnswerSpanList;
 import org.apache.uima.jcas.tcas.Annotation;
 
 
 /** 
- * Updated by JCasGen Tue Sep 10 01:55:38 EDT 2013
+ * Updated by JCasGen Tue Sep 10 02:07:48 EDT 2013
  * XML source: /home/richie/git/hw1-skohli/hw1-skohli/src/main/resources/typeSystemDescriptor.xml
  * @generated */
 public class UIMACASAnnotatedFile extends Annotation {
@@ -86,14 +85,14 @@ public class UIMACASAnnotatedFile extends Annotation {
 
   /** getter for answerSpanList - gets 
    * @generated */
-  public AnswerSpanList getAnswerSpanList() {
+  public AnswerList getAnswerSpanList() {
     if (UIMACASAnnotatedFile_Type.featOkTst && ((UIMACASAnnotatedFile_Type)jcasType).casFeat_answerSpanList == null)
       jcasType.jcas.throwFeatMissing("answerSpanList", "edu.cmu.lti.csd.types.UIMACASAnnotatedFile");
-    return (AnswerSpanList)(jcasType.ll_cas.ll_getFSForRef(jcasType.ll_cas.ll_getRefValue(addr, ((UIMACASAnnotatedFile_Type)jcasType).casFeatCode_answerSpanList)));}
+    return (AnswerList)(jcasType.ll_cas.ll_getFSForRef(jcasType.ll_cas.ll_getRefValue(addr, ((UIMACASAnnotatedFile_Type)jcasType).casFeatCode_answerSpanList)));}
     
   /** setter for answerSpanList - sets  
    * @generated */
-  public void setAnswerSpanList(AnswerSpanList v) {
+  public void setAnswerSpanList(AnswerList v) {
     if (UIMACASAnnotatedFile_Type.featOkTst && ((UIMACASAnnotatedFile_Type)jcasType).casFeat_answerSpanList == null)
       jcasType.jcas.throwFeatMissing("answerSpanList", "edu.cmu.lti.csd.types.UIMACASAnnotatedFile");
     jcasType.ll_cas.ll_setRefValue(addr, ((UIMACASAnnotatedFile_Type)jcasType).casFeatCode_answerSpanList, jcasType.ll_cas.ll_getFSRef(v));}    

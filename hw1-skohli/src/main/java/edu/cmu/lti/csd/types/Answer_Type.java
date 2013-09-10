@@ -1,5 +1,5 @@
 
-/* First created by JCasGen Tue Sep 10 01:54:42 EDT 2013 */
+/* First created by JCasGen Tue Sep 10 02:07:48 EDT 2013 */
 package edu.cmu.lti.csd.types;
 
 import org.apache.uima.jcas.JCas;
@@ -13,7 +13,7 @@ import org.apache.uima.cas.impl.FeatureImpl;
 import org.apache.uima.cas.Feature;
 
 /** 
- * Updated by JCasGen Tue Sep 10 01:55:38 EDT 2013
+ * Updated by JCasGen Tue Sep 10 02:07:48 EDT 2013
  * @generated */
 public class Answer_Type extends TokenSpan_Type {
   /** @generated */

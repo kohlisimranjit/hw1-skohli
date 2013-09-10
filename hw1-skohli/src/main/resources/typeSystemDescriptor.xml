@@ -6,9 +6,9 @@
     <vendor/>
   <types>
     <typeDescription>
-      <name>edu.cmu.lti.csd.types.NGramToken</name>
+      <name>edu.cmu.lti.csd.types.NGramTokenAnnotation</name>
       <description/>
-      <supertypeName>edu.cmu.lti.csd.types.GenericToken</supertypeName>
+      <supertypeName>edu.cmu.lti.csd.types.GenericTokenAnnotation</supertypeName>
       <features>
         <featureDescription>
           <name>partOfSpeech</name>
@@ -69,7 +69,7 @@
         <featureDescription>
           <name>answerSpanList</name>
           <description/>
-          <rangeTypeName>edu.cmu.lti.csd.types.AnswerSpanList</rangeTypeName>
+          <rangeTypeName>edu.cmu.lti.csd.types.AnswerList</rangeTypeName>
         </featureDescription>
       <featureDescription>
           <name>producer</name>
@@ -81,7 +81,7 @@
   <typeDescription>
       <name>edu.cmu.lti.csd.types.TokenSpan</name>
       <description/>
-      <supertypeName>edu.cmu.lti.csd.types.GenericToken</supertypeName>
+      <supertypeName>edu.cmu.lti.csd.types.GenericTokenAnnotation</supertypeName>
     </typeDescription>
     <typeDescription>
       <name>edu.cmu.lti.csd.types.Answer</name>
@@ -108,12 +108,12 @@
         <featureDescription>
           <name>sortedAnswerSpans</name>
           <description/>
-          <rangeTypeName>edu.cmu.lti.csd.types.AnswerSpanList</rangeTypeName>
+          <rangeTypeName>edu.cmu.lti.csd.types.AnswerList</rangeTypeName>
         </featureDescription>
       </features>
     </typeDescription>
     <typeDescription>
-      <name>edu.cmu.lti.csd.types.AnswerSpanList</name>
+      <name>edu.cmu.lti.csd.types.AnswerList</name>
       <description/>
       <supertypeName>uima.tcas.Annotation</supertypeName>
       <features>
@@ -126,7 +126,7 @@
       </features>
     </typeDescription>
     <typeDescription>
-      <name>edu.cmu.lti.csd.types.GenericToken</name>
+      <name>edu.cmu.lti.csd.types.GenericTokenAnnotation</name>
       <description/>
       <supertypeName>uima.tcas.Annotation</supertypeName>
       <features>

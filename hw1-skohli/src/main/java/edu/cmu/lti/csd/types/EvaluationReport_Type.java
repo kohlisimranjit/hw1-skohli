@@ -1,5 +1,5 @@
 
-/* First created by JCasGen Tue Sep 10 01:54:42 EDT 2013 */
+/* First created by JCasGen Tue Sep 10 02:07:48 EDT 2013 */
 package edu.cmu.lti.csd.types;
 
 import org.apache.uima.jcas.JCas;
@@ -14,7 +14,7 @@ import org.apache.uima.cas.Feature;
 import org.apache.uima.jcas.tcas.Annotation_Type;
 
 /** 
- * Updated by JCasGen Tue Sep 10 01:55:38 EDT 2013
+ * Updated by JCasGen Tue Sep 10 02:07:48 EDT 2013
  * @generated */
 public class EvaluationReport_Type extends Annotation_Type {
   /** @generated */
@@ -71,7 +71,7 @@ public class EvaluationReport_Type extends Annotation_Type {
     casImpl.getFSClassRegistry().addGeneratorForType((TypeImpl)this.casType, getFSGenerator());
 
  
-    casFeat_sortedAnswerSpans = jcas.getRequiredFeatureDE(casType, "sortedAnswerSpans", "edu.cmu.lti.csd.types.AnswerSpanList", featOkTst);
+    casFeat_sortedAnswerSpans = jcas.getRequiredFeatureDE(casType, "sortedAnswerSpans", "edu.cmu.lti.csd.types.AnswerList", featOkTst);
     casFeatCode_sortedAnswerSpans  = (null == casFeat_sortedAnswerSpans) ? JCas.INVALID_FEATURE_CODE : ((FeatureImpl)casFeat_sortedAnswerSpans).getCode();
 
   }
