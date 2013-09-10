@@ -11,7 +11,7 @@ import org.apache.uima.cas.impl.TypeImpl;
 import org.apache.uima.cas.Type;
 
 /** 
- * Updated by JCasGen Tue Sep 10 02:07:48 EDT 2013
+ * Updated by JCasGen Tue Sep 10 02:10:13 EDT 2013
  * @generated */
 public class TokenSpan_Type extends GenericTokenAnnotation_Type {
   /** @generated */

@@ -13,7 +13,7 @@ import org.apache.uima.cas.impl.FeatureImpl;
 import org.apache.uima.cas.Feature;
 
 /** 
- * Updated by JCasGen Tue Sep 10 02:07:48 EDT 2013
+ * Updated by JCasGen Tue Sep 10 02:10:13 EDT 2013
  * @generated */
 public class NGramTokenAnnotation_Type extends GenericTokenAnnotation_Type {
   /** @generated */
@@ -66,16 +66,16 @@ public class NGramTokenAnnotation_Type extends GenericTokenAnnotation_Type {
   /** @generated */
   final int     casFeatCode_confidenceScore;
   /** @generated */ 
-  public int getConfidenceScore(int addr) {
+  public double getConfidenceScore(int addr) {
         if (featOkTst && casFeat_confidenceScore == null)
       jcas.throwFeatMissing("confidenceScore", "edu.cmu.lti.csd.types.NGramTokenAnnotation");
-    return ll_cas.ll_getIntValue(addr, casFeatCode_confidenceScore);
+    return ll_cas.ll_getDoubleValue(addr, casFeatCode_confidenceScore);
   }
   /** @generated */    
-  public void setConfidenceScore(int addr, int v) {
+  public void setConfidenceScore(int addr, double v) {
         if (featOkTst && casFeat_confidenceScore == null)
       jcas.throwFeatMissing("confidenceScore", "edu.cmu.lti.csd.types.NGramTokenAnnotation");
-    ll_cas.ll_setIntValue(addr, casFeatCode_confidenceScore, v);}
+    ll_cas.ll_setDoubleValue(addr, casFeatCode_confidenceScore, v);}
     
   
  
@@ -110,7 +110,7 @@ public class NGramTokenAnnotation_Type extends GenericTokenAnnotation_Type {
     casFeatCode_partOfSpeech  = (null == casFeat_partOfSpeech) ? JCas.INVALID_FEATURE_CODE : ((FeatureImpl)casFeat_partOfSpeech).getCode();
 
  
-    casFeat_confidenceScore = jcas.getRequiredFeatureDE(casType, "confidenceScore", "uima.cas.Integer", featOkTst);
+    casFeat_confidenceScore = jcas.getRequiredFeatureDE(casType, "confidenceScore", "uima.cas.Double", featOkTst);
     casFeatCode_confidenceScore  = (null == casFeat_confidenceScore) ? JCas.INVALID_FEATURE_CODE : ((FeatureImpl)casFeat_confidenceScore).getCode();
 
  

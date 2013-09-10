@@ -10,7 +10,7 @@ import org.apache.uima.jcas.cas.TOP_Type;
 
 
 /** 
- * Updated by JCasGen Tue Sep 10 02:07:48 EDT 2013
+ * Updated by JCasGen Tue Sep 10 02:10:13 EDT 2013
  * XML source: /home/richie/git/hw1-skohli/hw1-skohli/src/main/resources/typeSystemDescriptor.xml
  * @generated */
 public class NGramTokenAnnotation extends GenericTokenAnnotation {
@@ -84,17 +84,17 @@ public class NGramTokenAnnotation extends GenericTokenAnnotation {
 
   /** getter for confidenceScore - gets 
    * @generated */
-  public int getConfidenceScore() {
+  public double getConfidenceScore() {
     if (NGramTokenAnnotation_Type.featOkTst && ((NGramTokenAnnotation_Type)jcasType).casFeat_confidenceScore == null)
       jcasType.jcas.throwFeatMissing("confidenceScore", "edu.cmu.lti.csd.types.NGramTokenAnnotation");
-    return jcasType.ll_cas.ll_getIntValue(addr, ((NGramTokenAnnotation_Type)jcasType).casFeatCode_confidenceScore);}
+    return jcasType.ll_cas.ll_getDoubleValue(addr, ((NGramTokenAnnotation_Type)jcasType).casFeatCode_confidenceScore);}
     
   /** setter for confidenceScore - sets  
    * @generated */
-  public void setConfidenceScore(int v) {
+  public void setConfidenceScore(double v) {
     if (NGramTokenAnnotation_Type.featOkTst && ((NGramTokenAnnotation_Type)jcasType).casFeat_confidenceScore == null)
       jcasType.jcas.throwFeatMissing("confidenceScore", "edu.cmu.lti.csd.types.NGramTokenAnnotation");
-    jcasType.ll_cas.ll_setIntValue(addr, ((NGramTokenAnnotation_Type)jcasType).casFeatCode_confidenceScore, v);}    
+    jcasType.ll_cas.ll_setDoubleValue(addr, ((NGramTokenAnnotation_Type)jcasType).casFeatCode_confidenceScore, v);}    
    
     
   //*--------------*

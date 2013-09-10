@@ -18,7 +18,7 @@
         <featureDescription>
           <name>confidenceScore</name>
           <description/>
-          <rangeTypeName>uima.cas.Integer</rangeTypeName>
+          <rangeTypeName>uima.cas.Double</rangeTypeName>
         </featureDescription>
         <featureDescription>
           <name>producer</name>
