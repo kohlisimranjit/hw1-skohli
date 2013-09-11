@@ -13,8 +13,10 @@ import org.apache.uima.cas.impl.FeatureImpl;
 import org.apache.uima.cas.Feature;
 import org.apache.uima.jcas.tcas.Annotation_Type;
 
-/** 
- * Updated by JCasGen Tue Sep 10 02:10:13 EDT 2013
+/** Encapsulation for a basic document Test Element documentation
+
+
+ * Updated by JCasGen Wed Sep 11 14:10:23 EDT 2013
  * @generated */
 public class TestElement_Type extends Annotation_Type {
   /** @generated */
@@ -49,16 +51,16 @@ public class TestElement_Type extends Annotation_Type {
   /** @generated */
   final int     casFeatCode_lines;
   /** @generated */ 
-  public int getLines(int addr) {
+  public String getLines(int addr) {
         if (featOkTst && casFeat_lines == null)
       jcas.throwFeatMissing("lines", "edu.cmu.lti.csd.types.TestElement");
-    return ll_cas.ll_getRefValue(addr, casFeatCode_lines);
+    return ll_cas.ll_getStringValue(addr, casFeatCode_lines);
   }
   /** @generated */    
-  public void setLines(int addr, int v) {
+  public void setLines(int addr, String v) {
         if (featOkTst && casFeat_lines == null)
       jcas.throwFeatMissing("lines", "edu.cmu.lti.csd.types.TestElement");
-    ll_cas.ll_setRefValue(addr, casFeatCode_lines, v);}
+    ll_cas.ll_setStringValue(addr, casFeatCode_lines, v);}
     
   
 
@@ -71,7 +73,7 @@ public class TestElement_Type extends Annotation_Type {
     casImpl.getFSClassRegistry().addGeneratorForType((TypeImpl)this.casType, getFSGenerator());
 
  
-    casFeat_lines = jcas.getRequiredFeatureDE(casType, "lines", "uima.cas.StringList", featOkTst);
+    casFeat_lines = jcas.getRequiredFeatureDE(casType, "lines", "uima.cas.String", featOkTst);
     casFeatCode_lines  = (null == casFeat_lines) ? JCas.INVALID_FEATURE_CODE : ((FeatureImpl)casFeat_lines).getCode();
 
   }

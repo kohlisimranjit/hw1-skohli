@@ -13,8 +13,8 @@ import org.apache.uima.cas.impl.FeatureImpl;
 import org.apache.uima.cas.Feature;
 import org.apache.uima.jcas.tcas.Annotation_Type;
 
-/** 
- * Updated by JCasGen Tue Sep 10 02:10:13 EDT 2013
+/** An encapsulation for the report which is required.
+ * Updated by JCasGen Wed Sep 11 14:10:23 EDT 2013
  * @generated */
 public class EvaluationReport_Type extends Annotation_Type {
   /** @generated */
@@ -61,6 +61,24 @@ public class EvaluationReport_Type extends Annotation_Type {
     ll_cas.ll_setRefValue(addr, casFeatCode_sortedAnswerSpans, v);}
     
   
+ 
+  /** @generated */
+  final Feature casFeat_precision;
+  /** @generated */
+  final int     casFeatCode_precision;
+  /** @generated */ 
+  public int getPrecision(int addr) {
+        if (featOkTst && casFeat_precision == null)
+      jcas.throwFeatMissing("precision", "edu.cmu.lti.csd.types.EvaluationReport");
+    return ll_cas.ll_getIntValue(addr, casFeatCode_precision);
+  }
+  /** @generated */    
+  public void setPrecision(int addr, int v) {
+        if (featOkTst && casFeat_precision == null)
+      jcas.throwFeatMissing("precision", "edu.cmu.lti.csd.types.EvaluationReport");
+    ll_cas.ll_setIntValue(addr, casFeatCode_precision, v);}
+    
+  
 
 
 
@@ -73,6 +91,10 @@ public class EvaluationReport_Type extends Annotation_Type {
  
     casFeat_sortedAnswerSpans = jcas.getRequiredFeatureDE(casType, "sortedAnswerSpans", "edu.cmu.lti.csd.types.AnswerList", featOkTst);
     casFeatCode_sortedAnswerSpans  = (null == casFeat_sortedAnswerSpans) ? JCas.INVALID_FEATURE_CODE : ((FeatureImpl)casFeat_sortedAnswerSpans).getCode();
+
+ 
+    casFeat_precision = jcas.getRequiredFeatureDE(casType, "precision", "uima.cas.Integer", featOkTst);
+    casFeatCode_precision  = (null == casFeat_precision) ? JCas.INVALID_FEATURE_CODE : ((FeatureImpl)casFeat_precision).getCode();
 
   }
 }

@@ -12,8 +12,8 @@ import org.apache.uima.cas.Type;
 import org.apache.uima.cas.impl.FeatureImpl;
 import org.apache.uima.cas.Feature;
 
-/** 
- * Updated by JCasGen Tue Sep 10 02:10:13 EDT 2013
+/** the NGramTokenAnnotation extends the functionality from Generic token and leverages it providing additional data requiredd to be associated with a token.
+ * Updated by JCasGen Wed Sep 11 14:10:23 EDT 2013
  * @generated */
 public class NGramTokenAnnotation_Type extends GenericTokenAnnotation_Type {
   /** @generated */

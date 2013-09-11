@@ -11,8 +11,8 @@ import org.apache.uima.jcas.cas.FSList;
 import org.apache.uima.jcas.tcas.Annotation;
 
 
-/** 
- * Updated by JCasGen Tue Sep 10 02:10:13 EDT 2013
+/** An encapsulation for a list of genericTokens.
+ * Updated by JCasGen Wed Sep 11 14:10:23 EDT 2013
  * XML source: /home/richie/git/hw1-skohli/hw1-skohli/src/main/resources/typeSystemDescriptor.xml
  * @generated */
 public class GenericTokenList extends Annotation {

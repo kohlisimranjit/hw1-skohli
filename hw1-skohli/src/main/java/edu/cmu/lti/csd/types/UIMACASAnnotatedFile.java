@@ -11,7 +11,7 @@ import org.apache.uima.jcas.tcas.Annotation;
 
 
 /** 
- * Updated by JCasGen Tue Sep 10 02:10:13 EDT 2013
+ * Updated by JCasGen Wed Sep 11 14:10:23 EDT 2013
  * XML source: /home/richie/git/hw1-skohli/hw1-skohli/src/main/resources/typeSystemDescriptor.xml
  * @generated */
 public class UIMACASAnnotatedFile extends Annotation {
@@ -65,16 +65,18 @@ public class UIMACASAnnotatedFile extends Annotation {
   //*--------------*
   //* Feature: questionSpan
 
-  /** getter for questionSpan - gets 
+  /** getter for questionSpan - gets the question of the document
+
    * @generated */
-  public Annotation getQuestionSpan() {
+  public Question getQuestionSpan() {
     if (UIMACASAnnotatedFile_Type.featOkTst && ((UIMACASAnnotatedFile_Type)jcasType).casFeat_questionSpan == null)
       jcasType.jcas.throwFeatMissing("questionSpan", "edu.cmu.lti.csd.types.UIMACASAnnotatedFile");
-    return (Annotation)(jcasType.ll_cas.ll_getFSForRef(jcasType.ll_cas.ll_getRefValue(addr, ((UIMACASAnnotatedFile_Type)jcasType).casFeatCode_questionSpan)));}
+    return (Question)(jcasType.ll_cas.ll_getFSForRef(jcasType.ll_cas.ll_getRefValue(addr, ((UIMACASAnnotatedFile_Type)jcasType).casFeatCode_questionSpan)));}
     
-  /** setter for questionSpan - sets  
+  /** setter for questionSpan - sets the question of the document
+ 
    * @generated */
-  public void setQuestionSpan(Annotation v) {
+  public void setQuestionSpan(Question v) {
     if (UIMACASAnnotatedFile_Type.featOkTst && ((UIMACASAnnotatedFile_Type)jcasType).casFeat_questionSpan == null)
       jcasType.jcas.throwFeatMissing("questionSpan", "edu.cmu.lti.csd.types.UIMACASAnnotatedFile");
     jcasType.ll_cas.ll_setRefValue(addr, ((UIMACASAnnotatedFile_Type)jcasType).casFeatCode_questionSpan, jcasType.ll_cas.ll_getFSRef(v));}    
@@ -83,14 +85,14 @@ public class UIMACASAnnotatedFile extends Annotation {
   //*--------------*
   //* Feature: answerSpanList
 
-  /** getter for answerSpanList - gets 
+  /** getter for answerSpanList - gets A list of all the basic annotated answers
    * @generated */
   public AnswerList getAnswerSpanList() {
     if (UIMACASAnnotatedFile_Type.featOkTst && ((UIMACASAnnotatedFile_Type)jcasType).casFeat_answerSpanList == null)
       jcasType.jcas.throwFeatMissing("answerSpanList", "edu.cmu.lti.csd.types.UIMACASAnnotatedFile");
     return (AnswerList)(jcasType.ll_cas.ll_getFSForRef(jcasType.ll_cas.ll_getRefValue(addr, ((UIMACASAnnotatedFile_Type)jcasType).casFeatCode_answerSpanList)));}
     
-  /** setter for answerSpanList - sets  
+  /** setter for answerSpanList - sets A list of all the basic annotated answers 
    * @generated */
   public void setAnswerSpanList(AnswerList v) {
     if (UIMACASAnnotatedFile_Type.featOkTst && ((UIMACASAnnotatedFile_Type)jcasType).casFeat_answerSpanList == null)
@@ -101,14 +103,14 @@ public class UIMACASAnnotatedFile extends Annotation {
   //*--------------*
   //* Feature: producer
 
-  /** getter for producer - gets 
+  /** getter for producer - gets the component which produced this type
    * @generated */
   public String getProducer() {
     if (UIMACASAnnotatedFile_Type.featOkTst && ((UIMACASAnnotatedFile_Type)jcasType).casFeat_producer == null)
       jcasType.jcas.throwFeatMissing("producer", "edu.cmu.lti.csd.types.UIMACASAnnotatedFile");
     return jcasType.ll_cas.ll_getStringValue(addr, ((UIMACASAnnotatedFile_Type)jcasType).casFeatCode_producer);}
     
-  /** setter for producer - sets  
+  /** setter for producer - sets the component which produced this type 
    * @generated */
   public void setProducer(String v) {
     if (UIMACASAnnotatedFile_Type.featOkTst && ((UIMACASAnnotatedFile_Type)jcasType).casFeat_producer == null)

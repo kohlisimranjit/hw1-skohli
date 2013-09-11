@@ -10,8 +10,8 @@ import org.apache.uima.cas.FeatureStructure;
 import org.apache.uima.cas.impl.TypeImpl;
 import org.apache.uima.cas.Type;
 
-/** 
- * Updated by JCasGen Tue Sep 10 02:10:13 EDT 2013
+/** Extends the funcionality of Generic token. Token span indicates that we are dealing with sentences.An encapsulation for sentences. 
+ * Updated by JCasGen Wed Sep 11 14:10:23 EDT 2013
  * @generated */
 public class TokenSpan_Type extends GenericTokenAnnotation_Type {
   /** @generated */

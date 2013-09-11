@@ -9,8 +9,8 @@ import org.apache.uima.jcas.cas.TOP_Type;
 
 
 
-/** 
- * Updated by JCasGen Tue Sep 10 02:10:13 EDT 2013
+/** the NGramTokenAnnotation extends the functionality from Generic token and leverages it providing additional data requiredd to be associated with a token.
+ * Updated by JCasGen Wed Sep 11 14:10:23 EDT 2013
  * XML source: /home/richie/git/hw1-skohli/hw1-skohli/src/main/resources/typeSystemDescriptor.xml
  * @generated */
 public class NGramTokenAnnotation extends GenericTokenAnnotation {
@@ -64,14 +64,14 @@ public class NGramTokenAnnotation extends GenericTokenAnnotation {
   //*--------------*
   //* Feature: partOfSpeech
 
-  /** getter for partOfSpeech - gets 
+  /** getter for partOfSpeech - gets the part of speech which the token belongs to eg. noun, adjective,noun phrase.
    * @generated */
   public String getPartOfSpeech() {
     if (NGramTokenAnnotation_Type.featOkTst && ((NGramTokenAnnotation_Type)jcasType).casFeat_partOfSpeech == null)
       jcasType.jcas.throwFeatMissing("partOfSpeech", "edu.cmu.lti.csd.types.NGramTokenAnnotation");
     return jcasType.ll_cas.ll_getStringValue(addr, ((NGramTokenAnnotation_Type)jcasType).casFeatCode_partOfSpeech);}
     
-  /** setter for partOfSpeech - sets  
+  /** setter for partOfSpeech - sets the part of speech which the token belongs to eg. noun, adjective,noun phrase. 
    * @generated */
   public void setPartOfSpeech(String v) {
     if (NGramTokenAnnotation_Type.featOkTst && ((NGramTokenAnnotation_Type)jcasType).casFeat_partOfSpeech == null)
@@ -82,14 +82,14 @@ public class NGramTokenAnnotation extends GenericTokenAnnotation {
   //*--------------*
   //* Feature: confidenceScore
 
-  /** getter for confidenceScore - gets 
+  /** getter for confidenceScore - gets the confidenece score associated with the token
    * @generated */
   public double getConfidenceScore() {
     if (NGramTokenAnnotation_Type.featOkTst && ((NGramTokenAnnotation_Type)jcasType).casFeat_confidenceScore == null)
       jcasType.jcas.throwFeatMissing("confidenceScore", "edu.cmu.lti.csd.types.NGramTokenAnnotation");
     return jcasType.ll_cas.ll_getDoubleValue(addr, ((NGramTokenAnnotation_Type)jcasType).casFeatCode_confidenceScore);}
     
-  /** setter for confidenceScore - sets  
+  /** setter for confidenceScore - sets the confidenece score associated with the token 
    * @generated */
   public void setConfidenceScore(double v) {
     if (NGramTokenAnnotation_Type.featOkTst && ((NGramTokenAnnotation_Type)jcasType).casFeat_confidenceScore == null)
@@ -100,14 +100,16 @@ public class NGramTokenAnnotation extends GenericTokenAnnotation {
   //*--------------*
   //* Feature: producer
 
-  /** getter for producer - gets 
+  /** getter for producer - gets The module which produced the annotation
+
    * @generated */
   public String getProducer() {
     if (NGramTokenAnnotation_Type.featOkTst && ((NGramTokenAnnotation_Type)jcasType).casFeat_producer == null)
       jcasType.jcas.throwFeatMissing("producer", "edu.cmu.lti.csd.types.NGramTokenAnnotation");
     return jcasType.ll_cas.ll_getStringValue(addr, ((NGramTokenAnnotation_Type)jcasType).casFeatCode_producer);}
     
-  /** setter for producer - sets  
+  /** setter for producer - sets The module which produced the annotation
+ 
    * @generated */
   public void setProducer(String v) {
     if (NGramTokenAnnotation_Type.featOkTst && ((NGramTokenAnnotation_Type)jcasType).casFeat_producer == null)

@@ -11,7 +11,7 @@ import org.apache.uima.jcas.tcas.Annotation;
 
 
 /** 
- * Updated by JCasGen Tue Sep 10 02:10:13 EDT 2013
+ * Updated by JCasGen Wed Sep 11 14:10:23 EDT 2013
  * XML source: /home/richie/git/hw1-skohli/hw1-skohli/src/main/resources/typeSystemDescriptor.xml
  * @generated */
 public class Range extends Annotation {
@@ -65,14 +65,18 @@ public class Range extends Annotation {
   //*--------------*
   //* Feature: start
 
-  /** getter for start - gets 
+  /** getter for start - gets start annotator
+
+
    * @generated */
   public int getStart() {
     if (Range_Type.featOkTst && ((Range_Type)jcasType).casFeat_start == null)
       jcasType.jcas.throwFeatMissing("start", "edu.cmu.lti.csd.types.Range");
     return jcasType.ll_cas.ll_getIntValue(addr, ((Range_Type)jcasType).casFeatCode_start);}
     
-  /** setter for start - sets  
+  /** setter for start - sets start annotator
+
+ 
    * @generated */
   public void setStart(int v) {
     if (Range_Type.featOkTst && ((Range_Type)jcasType).casFeat_start == null)
@@ -83,14 +87,16 @@ public class Range extends Annotation {
   //*--------------*
   //* Feature: end
 
-  /** getter for end - gets 
+  /** getter for end - gets end annotator
+
    * @generated */
   public int getEnd() {
     if (Range_Type.featOkTst && ((Range_Type)jcasType).casFeat_end == null)
       jcasType.jcas.throwFeatMissing("end", "edu.cmu.lti.csd.types.Range");
     return jcasType.ll_cas.ll_getIntValue(addr, ((Range_Type)jcasType).casFeatCode_end);}
     
-  /** setter for end - sets  
+  /** setter for end - sets end annotator
+ 
    * @generated */
   public void setEnd(int v) {
     if (Range_Type.featOkTst && ((Range_Type)jcasType).casFeat_end == null)

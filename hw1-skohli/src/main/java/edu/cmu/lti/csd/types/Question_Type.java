@@ -10,8 +10,8 @@ import org.apache.uima.cas.FeatureStructure;
 import org.apache.uima.cas.impl.TypeImpl;
 import org.apache.uima.cas.Type;
 
-/** 
- * Updated by JCasGen Tue Sep 10 02:10:13 EDT 2013
+/** Specialized kind of a token span used to deal only with question type of span.
+ * Updated by JCasGen Wed Sep 11 14:10:23 EDT 2013
  * @generated */
 public class Question_Type extends TokenSpan_Type {
   /** @generated */

@@ -9,8 +9,8 @@ import org.apache.uima.jcas.cas.TOP_Type;
 
 
 
-/** 
- * Updated by JCasGen Tue Sep 10 02:10:13 EDT 2013
+/** Extends the funcionality of Generic token. Token span indicates that we are dealing with sentences.An encapsulation for sentences. 
+ * Updated by JCasGen Wed Sep 11 14:10:23 EDT 2013
  * XML source: /home/richie/git/hw1-skohli/hw1-skohli/src/main/resources/typeSystemDescriptor.xml
  * @generated */
 public class TokenSpan extends GenericTokenAnnotation {

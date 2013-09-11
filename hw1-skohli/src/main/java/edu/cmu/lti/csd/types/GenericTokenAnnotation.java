@@ -10,8 +10,8 @@ import org.apache.uima.jcas.cas.TOP_Type;
 import org.apache.uima.jcas.tcas.Annotation;
 
 
-/** 
- * Updated by JCasGen Tue Sep 10 02:10:13 EDT 2013
+/** Bare minimum artifacts which have to be a part of annotation for token.
+ * Updated by JCasGen Wed Sep 11 14:10:23 EDT 2013
  * XML source: /home/richie/git/hw1-skohli/hw1-skohli/src/main/resources/typeSystemDescriptor.xml
  * @generated */
 public class GenericTokenAnnotation extends Annotation {
@@ -65,14 +65,16 @@ public class GenericTokenAnnotation extends Annotation {
   //*--------------*
   //* Feature: range
 
-  /** getter for range - gets 
+  /** getter for range - gets range of the token in the document
+
    * @generated */
   public Range getRange() {
     if (GenericTokenAnnotation_Type.featOkTst && ((GenericTokenAnnotation_Type)jcasType).casFeat_range == null)
       jcasType.jcas.throwFeatMissing("range", "edu.cmu.lti.csd.types.GenericTokenAnnotation");
     return (Range)(jcasType.ll_cas.ll_getFSForRef(jcasType.ll_cas.ll_getRefValue(addr, ((GenericTokenAnnotation_Type)jcasType).casFeatCode_range)));}
     
-  /** setter for range - sets  
+  /** setter for range - sets range of the token in the document
+ 
    * @generated */
   public void setRange(Range v) {
     if (GenericTokenAnnotation_Type.featOkTst && ((GenericTokenAnnotation_Type)jcasType).casFeat_range == null)
@@ -83,14 +85,16 @@ public class GenericTokenAnnotation extends Annotation {
   //*--------------*
   //* Feature: stringSet
 
-  /** getter for stringSet - gets 
+  /** getter for stringSet - gets can be actual token value of any granularity
+
    * @generated */
   public String getStringSet() {
     if (GenericTokenAnnotation_Type.featOkTst && ((GenericTokenAnnotation_Type)jcasType).casFeat_stringSet == null)
       jcasType.jcas.throwFeatMissing("stringSet", "edu.cmu.lti.csd.types.GenericTokenAnnotation");
     return jcasType.ll_cas.ll_getStringValue(addr, ((GenericTokenAnnotation_Type)jcasType).casFeatCode_stringSet);}
     
-  /** setter for stringSet - sets  
+  /** setter for stringSet - sets can be actual token value of any granularity
+ 
    * @generated */
   public void setStringSet(String v) {
     if (GenericTokenAnnotation_Type.featOkTst && ((GenericTokenAnnotation_Type)jcasType).casFeat_stringSet == null)

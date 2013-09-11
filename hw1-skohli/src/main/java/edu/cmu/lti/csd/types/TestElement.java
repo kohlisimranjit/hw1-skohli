@@ -11,8 +11,10 @@ import org.apache.uima.jcas.cas.StringList;
 import org.apache.uima.jcas.tcas.Annotation;
 
 
-/** 
- * Updated by JCasGen Tue Sep 10 02:10:13 EDT 2013
+/** Encapsulation for a basic document Test Element documentation
+
+
+ * Updated by JCasGen Wed Sep 11 14:10:23 EDT 2013
  * XML source: /home/richie/git/hw1-skohli/hw1-skohli/src/main/resources/typeSystemDescriptor.xml
  * @generated */
 public class TestElement extends Annotation {
@@ -66,19 +68,19 @@ public class TestElement extends Annotation {
   //*--------------*
   //* Feature: lines
 
-  /** getter for lines - gets 
+  /** getter for lines - gets a string containing all the lines in the document
    * @generated */
-  public StringList getLines() {
+  public String getLines() {
     if (TestElement_Type.featOkTst && ((TestElement_Type)jcasType).casFeat_lines == null)
       jcasType.jcas.throwFeatMissing("lines", "edu.cmu.lti.csd.types.TestElement");
-    return (StringList)(jcasType.ll_cas.ll_getFSForRef(jcasType.ll_cas.ll_getRefValue(addr, ((TestElement_Type)jcasType).casFeatCode_lines)));}
+    return jcasType.ll_cas.ll_getStringValue(addr, ((TestElement_Type)jcasType).casFeatCode_lines);}
     
-  /** setter for lines - sets  
+  /** setter for lines - sets a string containing all the lines in the document 
    * @generated */
-  public void setLines(StringList v) {
+  public void setLines(String v) {
     if (TestElement_Type.featOkTst && ((TestElement_Type)jcasType).casFeat_lines == null)
       jcasType.jcas.throwFeatMissing("lines", "edu.cmu.lti.csd.types.TestElement");
-    jcasType.ll_cas.ll_setRefValue(addr, ((TestElement_Type)jcasType).casFeatCode_lines, jcasType.ll_cas.ll_getFSRef(v));}    
+    jcasType.ll_cas.ll_setStringValue(addr, ((TestElement_Type)jcasType).casFeatCode_lines, v);}    
   }
 
     

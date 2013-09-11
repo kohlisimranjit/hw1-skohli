@@ -14,7 +14,7 @@ import org.apache.uima.cas.Feature;
 import org.apache.uima.jcas.tcas.Annotation_Type;
 
 /** 
- * Updated by JCasGen Tue Sep 10 02:10:13 EDT 2013
+ * Updated by JCasGen Wed Sep 11 14:10:23 EDT 2013
  * @generated */
 public class UIMACASAnnotatedFile_Type extends Annotation_Type {
   /** @generated */
@@ -107,7 +107,7 @@ public class UIMACASAnnotatedFile_Type extends Annotation_Type {
     casImpl.getFSClassRegistry().addGeneratorForType((TypeImpl)this.casType, getFSGenerator());
 
  
-    casFeat_questionSpan = jcas.getRequiredFeatureDE(casType, "questionSpan", "uima.tcas.Annotation", featOkTst);
+    casFeat_questionSpan = jcas.getRequiredFeatureDE(casType, "questionSpan", "edu.cmu.lti.csd.types.Question", featOkTst);
     casFeatCode_questionSpan  = (null == casFeat_questionSpan) ? JCas.INVALID_FEATURE_CODE : ((FeatureImpl)casFeat_questionSpan).getCode();
 
  
