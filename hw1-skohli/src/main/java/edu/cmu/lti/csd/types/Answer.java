@@ -1,6 +1,6 @@
 
 
-/* First created by JCasGen Tue Sep 10 02:07:48 EDT 2013 */
+/* First created by JCasGen Wed Sep 11 21:14:49 EDT 2013 */
 package edu.cmu.lti.csd.types;
 
 import org.apache.uima.jcas.JCas; 
@@ -9,8 +9,8 @@ import org.apache.uima.jcas.cas.TOP_Type;
 
 
 
-/** Specialized kind of token span dealing only with answer spans.
- * Updated by JCasGen Wed Sep 11 14:10:23 EDT 2013
+/** Specialized kind of TokenSpan dealing only with answer spans.
+ * Updated by JCasGen Wed Sep 11 21:15:32 EDT 2013
  * XML source: /home/richie/git/hw1-skohli/hw1-skohli/src/main/resources/typeSystemDescriptor.xml
  * @generated */
 public class Answer extends TokenSpan {
@@ -45,14 +45,6 @@ public class Answer extends TokenSpan {
     readObject();   
   } 
 
-  /** @generated */  
-  public Answer(JCas jcas, int begin, int end) {
-    super(jcas);
-    setBegin(begin);
-    setEnd(end);
-    readObject();
-  }   
-
   /** <!-- begin-user-doc -->
     * Write your own initialization here
     * <!-- end-user-doc -->
@@ -65,15 +57,13 @@ public class Answer extends TokenSpan {
   //* Feature: score
 
   /** getter for score - gets The score associated with each answer 1(true)or 0(false).
-
    * @generated */
   public int getScore() {
     if (Answer_Type.featOkTst && ((Answer_Type)jcasType).casFeat_score == null)
       jcasType.jcas.throwFeatMissing("score", "edu.cmu.lti.csd.types.Answer");
     return jcasType.ll_cas.ll_getIntValue(addr, ((Answer_Type)jcasType).casFeatCode_score);}
     
-  /** setter for score - sets The score associated with each answer 1(true)or 0(false).
- 
+  /** setter for score - sets The score associated with each answer 1(true)or 0(false). 
    * @generated */
   public void setScore(int v) {
     if (Answer_Type.featOkTst && ((Answer_Type)jcasType).casFeat_score == null)

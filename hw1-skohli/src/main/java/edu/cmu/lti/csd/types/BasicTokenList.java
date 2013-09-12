@@ -7,19 +7,20 @@ import org.apache.uima.jcas.JCas;
 import org.apache.uima.jcas.JCasRegistry;
 import org.apache.uima.jcas.cas.TOP_Type;
 
+import org.apache.uima.jcas.cas.FSList;
 import org.apache.uima.jcas.tcas.Annotation;
 
 
-/** Encapsulation for a basic document Test Element documentation
+/** An encapsulation for a list of basicTokens.
  * Updated by JCasGen Wed Sep 11 21:15:32 EDT 2013
  * XML source: /home/richie/git/hw1-skohli/hw1-skohli/src/main/resources/typeSystemDescriptor.xml
  * @generated */
-public class TestElement extends Annotation {
+public class BasicTokenList extends Annotation {
   /** @generated
    * @ordered 
    */
   @SuppressWarnings ("hiding")
-  public final static int typeIndexID = JCasRegistry.register(TestElement.class);
+  public final static int typeIndexID = JCasRegistry.register(BasicTokenList.class);
   /** @generated
    * @ordered 
    */
@@ -31,23 +32,23 @@ public class TestElement extends Annotation {
  
   /** Never called.  Disable default constructor
    * @generated */
-  protected TestElement() {/* intentionally empty block */}
+  protected BasicTokenList() {/* intentionally empty block */}
     
   /** Internal - constructor used by generator 
    * @generated */
-  public TestElement(int addr, TOP_Type type) {
+  public BasicTokenList(int addr, TOP_Type type) {
     super(addr, type);
     readObject();
   }
   
   /** @generated */
-  public TestElement(JCas jcas) {
+  public BasicTokenList(JCas jcas) {
     super(jcas);
     readObject();   
   } 
 
   /** @generated */  
-  public TestElement(JCas jcas, int begin, int end) {
+  public BasicTokenList(JCas jcas, int begin, int end) {
     super(jcas);
     setBegin(begin);
     setEnd(end);
@@ -63,21 +64,21 @@ public class TestElement extends Annotation {
  
     
   //*--------------*
-  //* Feature: lines
+  //* Feature: basicTokens
 
-  /** getter for lines - gets a string containing all the lines in the document
+  /** getter for basicTokens - gets A list of  basic tokens.
    * @generated */
-  public String getLines() {
-    if (TestElement_Type.featOkTst && ((TestElement_Type)jcasType).casFeat_lines == null)
-      jcasType.jcas.throwFeatMissing("lines", "edu.cmu.lti.csd.types.TestElement");
-    return jcasType.ll_cas.ll_getStringValue(addr, ((TestElement_Type)jcasType).casFeatCode_lines);}
+  public FSList getBasicTokens() {
+    if (BasicTokenList_Type.featOkTst && ((BasicTokenList_Type)jcasType).casFeat_basicTokens == null)
+      jcasType.jcas.throwFeatMissing("basicTokens", "edu.cmu.lti.csd.types.BasicTokenList");
+    return (FSList)(jcasType.ll_cas.ll_getFSForRef(jcasType.ll_cas.ll_getRefValue(addr, ((BasicTokenList_Type)jcasType).casFeatCode_basicTokens)));}
     
-  /** setter for lines - sets a string containing all the lines in the document 
+  /** setter for basicTokens - sets A list of  basic tokens. 
    * @generated */
-  public void setLines(String v) {
-    if (TestElement_Type.featOkTst && ((TestElement_Type)jcasType).casFeat_lines == null)
-      jcasType.jcas.throwFeatMissing("lines", "edu.cmu.lti.csd.types.TestElement");
-    jcasType.ll_cas.ll_setStringValue(addr, ((TestElement_Type)jcasType).casFeatCode_lines, v);}    
+  public void setBasicTokens(FSList v) {
+    if (BasicTokenList_Type.featOkTst && ((BasicTokenList_Type)jcasType).casFeat_basicTokens == null)
+      jcasType.jcas.throwFeatMissing("basicTokens", "edu.cmu.lti.csd.types.BasicTokenList");
+    jcasType.ll_cas.ll_setRefValue(addr, ((BasicTokenList_Type)jcasType).casFeatCode_basicTokens, jcasType.ll_cas.ll_getFSRef(v));}    
   }
 
     

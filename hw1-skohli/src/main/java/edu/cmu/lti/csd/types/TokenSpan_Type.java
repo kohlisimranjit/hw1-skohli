@@ -1,5 +1,5 @@
 
-/* First created by JCasGen Tue Sep 10 02:07:48 EDT 2013 */
+/* First created by JCasGen Wed Sep 11 21:14:49 EDT 2013 */
 package edu.cmu.lti.csd.types;
 
 import org.apache.uima.jcas.JCas;
@@ -10,10 +10,10 @@ import org.apache.uima.cas.FeatureStructure;
 import org.apache.uima.cas.impl.TypeImpl;
 import org.apache.uima.cas.Type;
 
-/** Extends the funcionality of Generic token. Token span indicates that we are dealing with sentences.An encapsulation for sentences. 
- * Updated by JCasGen Wed Sep 11 14:10:23 EDT 2013
+/** Extends the funcionality of BasicToken. Token span indicates that we are dealing with sentences.An encapsulation for sentences.
+ * Updated by JCasGen Wed Sep 11 21:15:32 EDT 2013
  * @generated */
-public class TokenSpan_Type extends GenericTokenAnnotation_Type {
+public class TokenSpan_Type extends BasicTokenAnnotation_Type {
   /** @generated */
   @Override
   protected FSGenerator getFSGenerator() {return fsGenerator;}

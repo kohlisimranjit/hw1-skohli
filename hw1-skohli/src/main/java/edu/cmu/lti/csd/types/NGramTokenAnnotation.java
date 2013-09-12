@@ -1,6 +1,6 @@
 
 
-/* First created by JCasGen Tue Sep 10 02:07:48 EDT 2013 */
+/* First created by JCasGen Wed Sep 11 21:14:49 EDT 2013 */
 package edu.cmu.lti.csd.types;
 
 import org.apache.uima.jcas.JCas; 
@@ -9,11 +9,11 @@ import org.apache.uima.jcas.cas.TOP_Type;
 
 
 
-/** the NGramTokenAnnotation extends the functionality from Generic token and leverages it providing additional data requiredd to be associated with a token.
- * Updated by JCasGen Wed Sep 11 14:10:23 EDT 2013
+/** the NGramTokenAnnotation extends the functionality from BasicToken and leverages it providing additional data required to be associated with a token.
+ * Updated by JCasGen Wed Sep 11 21:15:32 EDT 2013
  * XML source: /home/richie/git/hw1-skohli/hw1-skohli/src/main/resources/typeSystemDescriptor.xml
  * @generated */
-public class NGramTokenAnnotation extends GenericTokenAnnotation {
+public class NGramTokenAnnotation extends BasicTokenAnnotation {
   /** @generated
    * @ordered 
    */
@@ -44,14 +44,6 @@ public class NGramTokenAnnotation extends GenericTokenAnnotation {
     super(jcas);
     readObject();   
   } 
-
-  /** @generated */  
-  public NGramTokenAnnotation(JCas jcas, int begin, int end) {
-    super(jcas);
-    setBegin(begin);
-    setEnd(end);
-    readObject();
-  }   
 
   /** <!-- begin-user-doc -->
     * Write your own initialization here
@@ -95,26 +87,6 @@ public class NGramTokenAnnotation extends GenericTokenAnnotation {
     if (NGramTokenAnnotation_Type.featOkTst && ((NGramTokenAnnotation_Type)jcasType).casFeat_confidenceScore == null)
       jcasType.jcas.throwFeatMissing("confidenceScore", "edu.cmu.lti.csd.types.NGramTokenAnnotation");
     jcasType.ll_cas.ll_setDoubleValue(addr, ((NGramTokenAnnotation_Type)jcasType).casFeatCode_confidenceScore, v);}    
-   
-    
-  //*--------------*
-  //* Feature: producer
-
-  /** getter for producer - gets The module which produced the annotation
-
-   * @generated */
-  public String getProducer() {
-    if (NGramTokenAnnotation_Type.featOkTst && ((NGramTokenAnnotation_Type)jcasType).casFeat_producer == null)
-      jcasType.jcas.throwFeatMissing("producer", "edu.cmu.lti.csd.types.NGramTokenAnnotation");
-    return jcasType.ll_cas.ll_getStringValue(addr, ((NGramTokenAnnotation_Type)jcasType).casFeatCode_producer);}
-    
-  /** setter for producer - sets The module which produced the annotation
- 
-   * @generated */
-  public void setProducer(String v) {
-    if (NGramTokenAnnotation_Type.featOkTst && ((NGramTokenAnnotation_Type)jcasType).casFeat_producer == null)
-      jcasType.jcas.throwFeatMissing("producer", "edu.cmu.lti.csd.types.NGramTokenAnnotation");
-    jcasType.ll_cas.ll_setStringValue(addr, ((NGramTokenAnnotation_Type)jcasType).casFeatCode_producer, v);}    
   }
 
     

@@ -1,6 +1,6 @@
 
 
-/* First created by JCasGen Tue Sep 10 02:07:48 EDT 2013 */
+/* First created by JCasGen Wed Sep 11 21:14:49 EDT 2013 */
 package edu.cmu.lti.csd.types;
 
 import org.apache.uima.jcas.JCas; 
@@ -10,7 +10,7 @@ import org.apache.uima.jcas.cas.TOP_Type;
 
 
 /** Specialized kind of a token span used to deal only with question type of span.
- * Updated by JCasGen Wed Sep 11 14:10:23 EDT 2013
+ * Updated by JCasGen Wed Sep 11 21:15:32 EDT 2013
  * XML source: /home/richie/git/hw1-skohli/hw1-skohli/src/main/resources/typeSystemDescriptor.xml
  * @generated */
 public class Question extends TokenSpan {
@@ -44,14 +44,6 @@ public class Question extends TokenSpan {
     super(jcas);
     readObject();   
   } 
-
-  /** @generated */  
-  public Question(JCas jcas, int begin, int end) {
-    super(jcas);
-    setBegin(begin);
-    setEnd(end);
-    readObject();
-  }   
 
   /** <!-- begin-user-doc -->
     * Write your own initialization here

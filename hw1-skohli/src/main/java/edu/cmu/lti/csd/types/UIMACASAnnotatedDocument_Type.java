@@ -1,5 +1,5 @@
 
-/* First created by JCasGen Tue Sep 10 02:07:48 EDT 2013 */
+/* First created by JCasGen Wed Sep 11 21:14:49 EDT 2013 */
 package edu.cmu.lti.csd.types;
 
 import org.apache.uima.jcas.JCas;
@@ -14,9 +14,9 @@ import org.apache.uima.cas.Feature;
 import org.apache.uima.jcas.tcas.Annotation_Type;
 
 /** 
- * Updated by JCasGen Wed Sep 11 14:10:23 EDT 2013
+ * Updated by JCasGen Wed Sep 11 21:15:32 EDT 2013
  * @generated */
-public class UIMACASAnnotatedFile_Type extends Annotation_Type {
+public class UIMACASAnnotatedDocument_Type extends Annotation_Type {
   /** @generated */
   @Override
   protected FSGenerator getFSGenerator() {return fsGenerator;}
@@ -24,25 +24,25 @@ public class UIMACASAnnotatedFile_Type extends Annotation_Type {
   private final FSGenerator fsGenerator = 
     new FSGenerator() {
       public FeatureStructure createFS(int addr, CASImpl cas) {
-  			 if (UIMACASAnnotatedFile_Type.this.useExistingInstance) {
+  			 if (UIMACASAnnotatedDocument_Type.this.useExistingInstance) {
   			   // Return eq fs instance if already created
-  		     FeatureStructure fs = UIMACASAnnotatedFile_Type.this.jcas.getJfsFromCaddr(addr);
+  		     FeatureStructure fs = UIMACASAnnotatedDocument_Type.this.jcas.getJfsFromCaddr(addr);
   		     if (null == fs) {
-  		       fs = new UIMACASAnnotatedFile(addr, UIMACASAnnotatedFile_Type.this);
-  			   UIMACASAnnotatedFile_Type.this.jcas.putJfsFromCaddr(addr, fs);
+  		       fs = new UIMACASAnnotatedDocument(addr, UIMACASAnnotatedDocument_Type.this);
+  			   UIMACASAnnotatedDocument_Type.this.jcas.putJfsFromCaddr(addr, fs);
   			   return fs;
   		     }
   		     return fs;
-        } else return new UIMACASAnnotatedFile(addr, UIMACASAnnotatedFile_Type.this);
+        } else return new UIMACASAnnotatedDocument(addr, UIMACASAnnotatedDocument_Type.this);
   	  }
     };
   /** @generated */
   @SuppressWarnings ("hiding")
-  public final static int typeIndexID = UIMACASAnnotatedFile.typeIndexID;
+  public final static int typeIndexID = UIMACASAnnotatedDocument.typeIndexID;
   /** @generated 
      @modifiable */
   @SuppressWarnings ("hiding")
-  public final static boolean featOkTst = JCasRegistry.getFeatOkTst("edu.cmu.lti.csd.types.UIMACASAnnotatedFile");
+  public final static boolean featOkTst = JCasRegistry.getFeatOkTst("edu.cmu.lti.csd.types.UIMACASAnnotatedDocument");
  
   /** @generated */
   final Feature casFeat_questionSpan;
@@ -51,13 +51,13 @@ public class UIMACASAnnotatedFile_Type extends Annotation_Type {
   /** @generated */ 
   public int getQuestionSpan(int addr) {
         if (featOkTst && casFeat_questionSpan == null)
-      jcas.throwFeatMissing("questionSpan", "edu.cmu.lti.csd.types.UIMACASAnnotatedFile");
+      jcas.throwFeatMissing("questionSpan", "edu.cmu.lti.csd.types.UIMACASAnnotatedDocument");
     return ll_cas.ll_getRefValue(addr, casFeatCode_questionSpan);
   }
   /** @generated */    
   public void setQuestionSpan(int addr, int v) {
         if (featOkTst && casFeat_questionSpan == null)
-      jcas.throwFeatMissing("questionSpan", "edu.cmu.lti.csd.types.UIMACASAnnotatedFile");
+      jcas.throwFeatMissing("questionSpan", "edu.cmu.lti.csd.types.UIMACASAnnotatedDocument");
     ll_cas.ll_setRefValue(addr, casFeatCode_questionSpan, v);}
     
   
@@ -69,13 +69,13 @@ public class UIMACASAnnotatedFile_Type extends Annotation_Type {
   /** @generated */ 
   public int getAnswerSpanList(int addr) {
         if (featOkTst && casFeat_answerSpanList == null)
-      jcas.throwFeatMissing("answerSpanList", "edu.cmu.lti.csd.types.UIMACASAnnotatedFile");
+      jcas.throwFeatMissing("answerSpanList", "edu.cmu.lti.csd.types.UIMACASAnnotatedDocument");
     return ll_cas.ll_getRefValue(addr, casFeatCode_answerSpanList);
   }
   /** @generated */    
   public void setAnswerSpanList(int addr, int v) {
         if (featOkTst && casFeat_answerSpanList == null)
-      jcas.throwFeatMissing("answerSpanList", "edu.cmu.lti.csd.types.UIMACASAnnotatedFile");
+      jcas.throwFeatMissing("answerSpanList", "edu.cmu.lti.csd.types.UIMACASAnnotatedDocument");
     ll_cas.ll_setRefValue(addr, casFeatCode_answerSpanList, v);}
     
   
@@ -87,13 +87,13 @@ public class UIMACASAnnotatedFile_Type extends Annotation_Type {
   /** @generated */ 
   public String getProducer(int addr) {
         if (featOkTst && casFeat_producer == null)
-      jcas.throwFeatMissing("producer", "edu.cmu.lti.csd.types.UIMACASAnnotatedFile");
+      jcas.throwFeatMissing("producer", "edu.cmu.lti.csd.types.UIMACASAnnotatedDocument");
     return ll_cas.ll_getStringValue(addr, casFeatCode_producer);
   }
   /** @generated */    
   public void setProducer(int addr, String v) {
         if (featOkTst && casFeat_producer == null)
-      jcas.throwFeatMissing("producer", "edu.cmu.lti.csd.types.UIMACASAnnotatedFile");
+      jcas.throwFeatMissing("producer", "edu.cmu.lti.csd.types.UIMACASAnnotatedDocument");
     ll_cas.ll_setStringValue(addr, casFeatCode_producer, v);}
     
   
@@ -102,7 +102,7 @@ public class UIMACASAnnotatedFile_Type extends Annotation_Type {
 
   /** initialize variables to correspond with Cas Type and Features
 	* @generated */
-  public UIMACASAnnotatedFile_Type(JCas jcas, Type casType) {
+  public UIMACASAnnotatedDocument_Type(JCas jcas, Type casType) {
     super(jcas, casType);
     casImpl.getFSClassRegistry().addGeneratorForType((TypeImpl)this.casType, getFSGenerator());
 

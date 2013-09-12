@@ -1,5 +1,5 @@
 
-/* First created by JCasGen Tue Sep 10 02:07:48 EDT 2013 */
+/* First created by JCasGen Wed Sep 11 21:14:49 EDT 2013 */
 package edu.cmu.lti.csd.types;
 
 import org.apache.uima.jcas.JCas;
@@ -14,7 +14,7 @@ import org.apache.uima.cas.Feature;
 import org.apache.uima.jcas.tcas.Annotation_Type;
 
 /** An encapsulation for the report which is required.
- * Updated by JCasGen Wed Sep 11 14:10:23 EDT 2013
+ * Updated by JCasGen Wed Sep 11 21:15:32 EDT 2013
  * @generated */
 public class EvaluationReport_Type extends Annotation_Type {
   /** @generated */

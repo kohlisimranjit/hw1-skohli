@@ -1,24 +1,25 @@
 
 
-/* First created by JCasGen Wed Sep 11 21:14:49 EDT 2013 */
+/* First created by JCasGen Wed Sep 11 21:15:32 EDT 2013 */
 package edu.cmu.lti.csd.types;
 
 import org.apache.uima.jcas.JCas; 
 import org.apache.uima.jcas.JCasRegistry;
 import org.apache.uima.jcas.cas.TOP_Type;
 
+import org.apache.uima.jcas.cas.TOP;
 
 
-/** Extends the funcionality of BasicToken. Token span indicates that we are dealing with sentences.An encapsulation for sentences.
+/** 
  * Updated by JCasGen Wed Sep 11 21:15:32 EDT 2013
  * XML source: /home/richie/git/hw1-skohli/hw1-skohli/src/main/resources/typeSystemDescriptor.xml
  * @generated */
-public class TokenSpan extends BasicTokenAnnotation {
+public class QAModel extends TOP {
   /** @generated
    * @ordered 
    */
   @SuppressWarnings ("hiding")
-  public final static int typeIndexID = JCasRegistry.register(TokenSpan.class);
+  public final static int typeIndexID = JCasRegistry.register(QAModel.class);
   /** @generated
    * @ordered 
    */
@@ -30,17 +31,17 @@ public class TokenSpan extends BasicTokenAnnotation {
  
   /** Never called.  Disable default constructor
    * @generated */
-  protected TokenSpan() {/* intentionally empty block */}
+  protected QAModel() {/* intentionally empty block */}
     
   /** Internal - constructor used by generator 
    * @generated */
-  public TokenSpan(int addr, TOP_Type type) {
+  public QAModel(int addr, TOP_Type type) {
     super(addr, type);
     readObject();
   }
   
   /** @generated */
-  public TokenSpan(JCas jcas) {
+  public QAModel(JCas jcas) {
     super(jcas);
     readObject();   
   } 

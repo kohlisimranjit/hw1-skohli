@@ -5,10 +5,60 @@
     <version>1.0</version>
     <vendor/>
   <types>
+  
+  
+  <typeDescription>
+      <name>edu.cmu.lti.csd.types.QAModel</name>
+      <description/>
+      <supertypeName>uima.cas.TOP</supertypeName>
+    </typeDescription>
+    
+    <typeDescription>
+      <name>edu.cmu.lti.csd.types.Range</name>
+      <description/>
+      <supertypeName>uima.cas.AnnotationBase</supertypeName>
+      <features>
+        <featureDescription>
+          <name>start</name>
+          <description>start annotator</description>
+          <rangeTypeName>uima.cas.Integer</rangeTypeName>
+        </featureDescription>
+        <featureDescription>
+          <name>end</name>
+          <description>end annotator</description>
+          <rangeTypeName>uima.cas.Integer</rangeTypeName>
+        </featureDescription>
+      </features>
+    </typeDescription>
+ 
+   <typeDescription>
+ 
+  <name>edu.cmu.lti.csd.types.BasicTokenAnnotation</name>
+      <description>Bare minimum artifacts which have to be a part of annotation for token.</description>
+      <supertypeName>uima.cas.AnnotationBase</supertypeName>
+      <features>
+        <featureDescription>
+          <name>range</name>
+          <description>range of the token in the document</description>
+          <rangeTypeName>edu.cmu.lti.csd.types.Range</rangeTypeName>
+        </featureDescription>
+        <featureDescription>
+          <name>tokenValue</name>
+          <description>can be actual token value of any granularity</description>
+          <rangeTypeName>uima.cas.String</rangeTypeName>
+        </featureDescription>
+      <featureDescription>
+          <name>producer</name>
+          <description>The producer of this token</description>
+          <rangeTypeName>uima.cas.String</rangeTypeName>
+        </featureDescription>
+      </features>
+    </typeDescription>
+ 
     <typeDescription>
       <name>edu.cmu.lti.csd.types.NGramTokenAnnotation</name>
-      <description>the NGramTokenAnnotation extends the functionality from Generic token and leverages it providing additional data requiredd to be associated with a token.</description>
-      <supertypeName>edu.cmu.lti.csd.types.GenericTokenAnnotation</supertypeName>
+      <description>the NGramTokenAnnotation extends the functionality from BasicToken and leverages it providing additional data required to be associated with a token.</description>
+      <supertypeName>edu.cmu.lti.csd.types.BasicTokenAnnotation</supertypeName>
       <features>
         <featureDescription>
           <name>partOfSpeech</name>
@@ -20,39 +70,12 @@
           <description>the confidenece score associated with the token</description>
           <rangeTypeName>uima.cas.Double</rangeTypeName>
         </featureDescription>
-        <featureDescription>
-          <name>producer</name>
-          <description>The module which produced the annotation
-</description>
-          <rangeTypeName>uima.cas.String</rangeTypeName>
-        </featureDescription>
         </features>
     </typeDescription>
-    <typeDescription>
-      <name>edu.cmu.lti.csd.types.Range</name>
-      <description/>
-      <supertypeName>uima.tcas.Annotation</supertypeName>
-      <features>
-        <featureDescription>
-          <name>start</name>
-          <description>start annotator
-
-</description>
-          <rangeTypeName>uima.cas.Integer</rangeTypeName>
-        </featureDescription>
-        <featureDescription>
-          <name>end</name>
-          <description>end annotator
-</description>
-          <rangeTypeName>uima.cas.Integer</rangeTypeName>
-        </featureDescription>
-      </features>
-    </typeDescription>
+ 
     <typeDescription>
       <name>edu.cmu.lti.csd.types.TestElement</name>
-      <description>Encapsulation for a basic document Test Element documentation
-
-</description>
+      <description>Encapsulation for a basic document Test Element documentation</description>
       <supertypeName>uima.tcas.Annotation</supertypeName>
       <features>
         <featureDescription>
@@ -63,14 +86,13 @@
       </features>
     </typeDescription>
     <typeDescription>
-      <name>edu.cmu.lti.csd.types.UIMACASAnnotatedFile</name>
+      <name>edu.cmu.lti.csd.types.UIMACASAnnotatedDocument</name>
       <description/>
       <supertypeName>uima.tcas.Annotation</supertypeName>
       <features>
         <featureDescription>
           <name>questionSpan</name>
-          <description>the question of the document
-</description>
+          <description>the question of the document</description>
           <rangeTypeName>edu.cmu.lti.csd.types.Question</rangeTypeName>
         </featureDescription>
         <featureDescription>
@@ -87,18 +109,17 @@
     </typeDescription>
   <typeDescription>
       <name>edu.cmu.lti.csd.types.TokenSpan</name>
-      <description>Extends the funcionality of Generic token. Token span indicates that we are dealing with sentences.An encapsulation for sentences. </description>
-      <supertypeName>edu.cmu.lti.csd.types.GenericTokenAnnotation</supertypeName>
+      <description>Extends the funcionality of BasicToken. Token span indicates that we are dealing with sentences.An encapsulation for sentences.</description>
+      <supertypeName>edu.cmu.lti.csd.types.BasicTokenAnnotation</supertypeName>
     </typeDescription>
     <typeDescription>
       <name>edu.cmu.lti.csd.types.Answer</name>
-      <description>Specialized kind of token span dealing only with answer spans.</description>
+      <description>Specialized kind of TokenSpan dealing only with answer spans.</description>
       <supertypeName>edu.cmu.lti.csd.types.TokenSpan</supertypeName>
       <features>
         <featureDescription>
           <name>score</name>
-          <description>The score associated with each answer 1(true)or 0(false).
-</description>
+          <description>The score associated with each answer 1(true)or 0(false).</description>
           <rangeTypeName>uima.cas.Integer</rangeTypeName>
         </featureDescription>
       </features>
@@ -127,48 +148,32 @@
     </typeDescription>
     <typeDescription>
       <name>edu.cmu.lti.csd.types.AnswerList</name>
-      <description>A list of type Answer created to provide greater encapsulation for answers (Answer List). </description>
+      <description>An encapsulation for list of  answers
+</description>
       <supertypeName>uima.tcas.Annotation</supertypeName>
       <features>
         <featureDescription>
           <name>answers</name>
-          <description>A list of type Answers. </description>
+          <description>A list of type Answers.</description>
           <rangeTypeName>uima.cas.FSList</rangeTypeName>
           <elementType>com.cmu.lti.csd.types.AnswerSpan</elementType>
         </featureDescription>
       </features>
     </typeDescription>
-    <typeDescription>
-      <name>edu.cmu.lti.csd.types.GenericTokenAnnotation</name>
-      <description>Bare minimum artifacts which have to be a part of annotation for token.</description>
+     
+<typeDescription>
+      <name>edu.cmu.lti.csd.types.BasicTokenList</name>
+      <description>An encapsulation for a list of basicTokens.</description>
       <supertypeName>uima.tcas.Annotation</supertypeName>
       <features>
         <featureDescription>
-          <name>range</name>
-          <description>range of the token in the document
-</description>
-          <rangeTypeName>edu.cmu.lti.csd.types.Range</rangeTypeName>
-        </featureDescription>
-        <featureDescription>
-          <name>stringSet</name>
-          <description>can be actual token value of any granularity
-</description>
-          <rangeTypeName>uima.cas.String</rangeTypeName>
-        </featureDescription>
-      </features>
-    </typeDescription>
-  <typeDescription>
-      <name>edu.cmu.lti.csd.types.GenericTokenList</name>
-      <description>An encapsulation for a list of genericTokens.</description>
-      <supertypeName>uima.tcas.Annotation</supertypeName>
-      <features>
-        <featureDescription>
-          <name>genericTokens</name>
-          <description/>
+          <name>basicTokens</name>
+          <description>A list of  basic tokens.</description>
           <rangeTypeName>uima.cas.FSList</rangeTypeName>
-          <elementType>com.cmu.lti.csd.types.GenericToken</elementType>
+          <elementType>com.cmu.lti.csd.types.BasicToken</elementType>
         </featureDescription>
       </features>
     </typeDescription>
+ 
   </types>
 </typeSystemDescription>

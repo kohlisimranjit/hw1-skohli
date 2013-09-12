@@ -1,5 +1,5 @@
 
-/* First created by JCasGen Tue Sep 10 02:07:48 EDT 2013 */
+/* First created by JCasGen Wed Sep 11 21:14:49 EDT 2013 */
 package edu.cmu.lti.csd.types;
 
 import org.apache.uima.jcas.JCas;
@@ -12,10 +12,10 @@ import org.apache.uima.cas.Type;
 import org.apache.uima.cas.impl.FeatureImpl;
 import org.apache.uima.cas.Feature;
 
-/** the NGramTokenAnnotation extends the functionality from Generic token and leverages it providing additional data requiredd to be associated with a token.
- * Updated by JCasGen Wed Sep 11 14:10:23 EDT 2013
+/** the NGramTokenAnnotation extends the functionality from BasicToken and leverages it providing additional data required to be associated with a token.
+ * Updated by JCasGen Wed Sep 11 21:15:32 EDT 2013
  * @generated */
-public class NGramTokenAnnotation_Type extends GenericTokenAnnotation_Type {
+public class NGramTokenAnnotation_Type extends BasicTokenAnnotation_Type {
   /** @generated */
   @Override
   protected FSGenerator getFSGenerator() {return fsGenerator;}
@@ -78,24 +78,6 @@ public class NGramTokenAnnotation_Type extends GenericTokenAnnotation_Type {
     ll_cas.ll_setDoubleValue(addr, casFeatCode_confidenceScore, v);}
     
   
- 
-  /** @generated */
-  final Feature casFeat_producer;
-  /** @generated */
-  final int     casFeatCode_producer;
-  /** @generated */ 
-  public String getProducer(int addr) {
-        if (featOkTst && casFeat_producer == null)
-      jcas.throwFeatMissing("producer", "edu.cmu.lti.csd.types.NGramTokenAnnotation");
-    return ll_cas.ll_getStringValue(addr, casFeatCode_producer);
-  }
-  /** @generated */    
-  public void setProducer(int addr, String v) {
-        if (featOkTst && casFeat_producer == null)
-      jcas.throwFeatMissing("producer", "edu.cmu.lti.csd.types.NGramTokenAnnotation");
-    ll_cas.ll_setStringValue(addr, casFeatCode_producer, v);}
-    
-  
 
 
 
@@ -112,10 +94,6 @@ public class NGramTokenAnnotation_Type extends GenericTokenAnnotation_Type {
  
     casFeat_confidenceScore = jcas.getRequiredFeatureDE(casType, "confidenceScore", "uima.cas.Double", featOkTst);
     casFeatCode_confidenceScore  = (null == casFeat_confidenceScore) ? JCas.INVALID_FEATURE_CODE : ((FeatureImpl)casFeat_confidenceScore).getCode();
-
- 
-    casFeat_producer = jcas.getRequiredFeatureDE(casType, "producer", "uima.cas.String", featOkTst);
-    casFeatCode_producer  = (null == casFeat_producer) ? JCas.INVALID_FEATURE_CODE : ((FeatureImpl)casFeat_producer).getCode();
 
   }
 }

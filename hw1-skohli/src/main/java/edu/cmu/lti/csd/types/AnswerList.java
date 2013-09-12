@@ -1,6 +1,6 @@
 
 
-/* First created by JCasGen Tue Sep 10 02:07:48 EDT 2013 */
+/* First created by JCasGen Wed Sep 11 21:14:49 EDT 2013 */
 package edu.cmu.lti.csd.types;
 
 import org.apache.uima.jcas.JCas; 
@@ -11,8 +11,9 @@ import org.apache.uima.jcas.cas.FSList;
 import org.apache.uima.jcas.tcas.Annotation;
 
 
-/** A list of type Answer created to provide greater encapsulation for answers (Answer List). 
- * Updated by JCasGen Wed Sep 11 14:10:23 EDT 2013
+/** An encapsulation for list of  answers
+
+ * Updated by JCasGen Wed Sep 11 21:15:32 EDT 2013
  * XML source: /home/richie/git/hw1-skohli/hw1-skohli/src/main/resources/typeSystemDescriptor.xml
  * @generated */
 public class AnswerList extends Annotation {
@@ -66,14 +67,14 @@ public class AnswerList extends Annotation {
   //*--------------*
   //* Feature: answers
 
-  /** getter for answers - gets A list of type Answers. 
+  /** getter for answers - gets A list of type Answers.
    * @generated */
   public FSList getAnswers() {
     if (AnswerList_Type.featOkTst && ((AnswerList_Type)jcasType).casFeat_answers == null)
       jcasType.jcas.throwFeatMissing("answers", "edu.cmu.lti.csd.types.AnswerList");
     return (FSList)(jcasType.ll_cas.ll_getFSForRef(jcasType.ll_cas.ll_getRefValue(addr, ((AnswerList_Type)jcasType).casFeatCode_answers)));}
     
-  /** setter for answers - sets A list of type Answers.  
+  /** setter for answers - sets A list of type Answers. 
    * @generated */
   public void setAnswers(FSList v) {
     if (AnswerList_Type.featOkTst && ((AnswerList_Type)jcasType).casFeat_answers == null)
